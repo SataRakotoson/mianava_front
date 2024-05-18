@@ -25,6 +25,8 @@ function DetailOne ( props ) {
     const [ showVariationPrice, setShowVariationPrice ] = useState( false );
     const [ maxPrice, setMaxPrice ] = useState( 0 );
     const [ minPrice, setMinPrice ] = useState( 99999 );
+    const product_detail = product.product.fieldData
+    const product_sku = product.skus
 
     // useEffect( () => {
     //     window.addEventListener( 'scroll', scrollHandler, {
@@ -245,7 +247,7 @@ function DetailOne ( props ) {
 
     return (
         <div className="product-details" ref={ ref }>
-            <h1 className="product-title text-high-pink font-weight-bold">Produit de test</h1>
+            <h1 className="product-title text-high-pink font-weight-bold">{product_detail.name}</h1>
 
             <div className="ratings-container">
                 <div className="ratings">
@@ -282,11 +284,11 @@ function DetailOne ( props ) {
                             <div className="product-price">${ minPrice.toFixed( 2 ) }&ndash;${ maxPrice.toFixed( 2 ) }</div>
             } */}
             <div className="product-price">
-                <span className="new-price">260.000Ar</span>
+                <span className="new-price">{product_sku[0].fieldData.price.value} MGA</span>
             </div>
 
             <div className="product-content">
-                <p>Short description</p>
+                <p>{product_detail.description}</p>
             </div>
 
             {/* {
@@ -375,7 +377,7 @@ function DetailOne ( props ) {
                     className={ `btn-product btn-cart` }
                     onClick={ e => onCartClick( e, 0 ) }
                 >
-                    <span>add to cart</span>
+                    <span>Ajouter au panier</span>
                 </a>
             </div >
 
@@ -383,7 +385,7 @@ function DetailOne ( props ) {
                 <div className="product-cat w-100 text-truncate">
                     <span>Category:</span>
                     {
-                        ['Dressing'].map( ( cat, index ) => (
+                        ['Parfum'].map( ( cat, index ) => (
                             <span key={ index }>
                                 <ALink
                                     href='#'
@@ -393,7 +395,7 @@ function DetailOne ( props ) {
                     }
                 </div >
 
-                <div className="social-icons social-icons-sm">
+                {/* <div className="social-icons social-icons-sm">
                     <span className="social-label">Share:</span>
                     <ALink href="#" className="social-icon" title="Facebook">
                         <i className="icon-facebook-f"></i>
@@ -407,7 +409,7 @@ function DetailOne ( props ) {
                     <ALink href="#" className="social-icon" title="Pinterest">
                         <i className="icon-pinterest"></i>
                     </ALink>
-                </div>
+                </div> */}
             </div >
             {/* <div className="sticky-bar d-none">
                 <div className="container">
