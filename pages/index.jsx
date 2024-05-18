@@ -46,9 +46,9 @@ function Home () {
                         <LazyLoadImage
                             className="computer"
                             alt="banner"
-                            width={ 800 }
+                            width={ 1500 }
                             height={ 250 }
-                            src="images/import/texte_accueil.png"
+                            src="images/import/texte_accueil.webp"
                             threshold={ 200 }
                             effect="opacity"
                         />
@@ -60,7 +60,7 @@ function Home () {
                                         alt="banner"
                                         width={ 800 }
                                         height={ 250 }
-                                        src="images/import/texte_accueil.png"
+                                        src="images/import/texte_accueil.webp"
                                         threshold={ 200 }
                                         effect="opacity"
                                     />

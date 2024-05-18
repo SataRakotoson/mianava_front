@@ -108,8 +108,8 @@ function Header () {
 
                             <div className="header-center">
                                 <ALink href="/" className="logo">
-                                    {/* <img src="images/home/logo.png" alt="Molla Logo" width={ 82 } height={ 20 } /> */}
-                                    <h4>Mianava</h4>
+                                    <img src="images/import/logo.webp" alt="Molla Logo" width={ 100 } height={ 20 } />
+                                    {/* <h4>Mianava</h4> */}
                                 </ALink>
                             </div>
 
