@@ -370,73 +370,73 @@ export const shopData = {
 
     "brands": [
         {
-            brand: "Next",
+            brand: "Sephora",
             slug: "next"
         },
         {
-            brand: "River Island",
+            brand: "Etam",
             slug: "river-island"
         },
         {
-            brand: "Geox",
+            brand: "Vans",
             slug: "geox"
         },
         {
-            brand: "New Balance",
+            brand: "Emma",
             slug: "nex-balance"
         },
         {
-            brand: "UGG",
+            brand: "Crocs",
             slug: "ugg"
         },
         {
-            brand: "F&F",
+            brand: "Nike",
             slug: "f-and-f"
         },
         {
-            brand: "Nike",
+            brand: "Petronas",
             slug: "nike"
         }
     ],
 
     "categories": [
         {
-            name: "Furniture",
+            name: "Homme",
             slug: "furniture",
             count: 8
         },
         {
-            name: "Coffee & Tables",
+            name: "Femme",
             slug: "coffee-and-tables",
             count: 1
         },
         {
-            name: "Lighting",
+            name: "Enfant",
             slug: "lighting",
             count: 3
         },
         {
-            name: "Decoration",
+            name: "Parfum",
             slug: "decoration",
             count: 5
         },
         {
-            name: "Electronics",
+            name: "Soin Visage",
             slug: "electronics",
             count: 1
         },
         {
-            name: "Beds",
+            name: "Maquillage",
             slug: "beds",
             count: 2
         },
         {
-            name: "Armchairs & Chaises",
+            name: "Soin corps et cheveux",
             slug: "armchairs-and-chaises",
             count: 3
         },
         {
-            name: "Sofas & Sleeper Sofas",
+            name: "Chaussures",
             slug: "sofas-and-sleeper-sofas",
             count: 1
         }
@@ -446,27 +446,27 @@ export const shopData = {
         {
             min: '0',
             max: '25',
-            name: 'Under $25'
+            name: 'Under 25€'
         },
         {
             min: '25',
             max: '50',
-            name: '$25 to $50'
+            name: '25€ to 50€'
         },
         {
             min: '50',
             max: '100',
-            name: '$50 to $100'
+            name: '50€ to 100€'
         },
         {
             min: '100',
             max: '200',
-            name: '$100 to $200'
+            name: '100€ to 200€'
         },
         {
             min: '200',
             max: '9999',
-            name: '$200 & Above'
+            name: '200€ & plus'
         },
     ]
 }

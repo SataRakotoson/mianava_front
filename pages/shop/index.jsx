@@ -136,7 +136,7 @@ function Shop() {
 
                                 <div className="toolbox-right">
                                     <div className="toolbox-sort">
-                                        <label htmlFor="sortby">Sort by:</label>
+                                        <label htmlFor="sortby">Filtrer par:</label>
                                         <div className="select-custom">
                                             <select
                                                 name="sortby"
@@ -146,8 +146,8 @@ function Shop() {
                                                 // value={ query.sortBy ? query.sortBy : 'default' }
                                             >
                                                 <option value="default">Default</option>
-                                                <option value="featured">Most Popular</option>
-                                                <option value="rating">Most Rated</option>
+                                                <option value="featured">Les plus populaires</option>
+                                                <option value="rating">Les mieux notés</option>
                                                 <option value="new">Date</option>
                                             </select>
                                         </div>

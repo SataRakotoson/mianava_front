@@ -175,7 +175,7 @@ function ProductEleven ( props ) {
             <div className="product-body">
                 <div className="product-cat">
                     {
-                        ['Women'].map( ( item, index ) => (
+                        ['Parfum'].map( ( item, index ) => (
                             <React.Fragment key={ index }>
                                 {/* <ALink href={ { pathname: '/shop/sidebar/list', query: { category: item.slug } } }>
                                     { item }

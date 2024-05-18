@@ -70,7 +70,7 @@ function ShopSidebarOne ( props ) {
                         { ( { onToggle, setCollapsibleElement, toggleState } ) => (
                             <div className="widget widget-collapsible">
                                 <h3 className="widget-title mb-2">
-                                    <a href="#category" className={ `${toggleState.toLowerCase() == 'collapsed' ? 'collapsed' : ''}` } onClick={ ( e ) => { onToggle( e ); e.preventDefault() } }>Category</a>
+                                    <a href="#category" className={ `${toggleState.toLowerCase() == 'collapsed' ? 'collapsed' : ''}` } onClick={ ( e ) => { onToggle( e ); e.preventDefault() } }>Catégories</a>
                                 </h3>
 
                                 <div ref={ setCollapsibleElement }>
@@ -95,7 +95,7 @@ function ShopSidebarOne ( props ) {
                         {
                             ( { onToggle, setCollapsibleElement, toggleState } ) => (
                                 <div className="widget widget-collapsible">
-                                    <h3 className="widget-title mb-2"><a href="#Size" className={ `${toggleState.toLowerCase() == 'collapsed' ? 'collapsed' : ''}` } onClick={ ( e ) => { onToggle( e ); e.preventDefault() } }>Size</a></h3>
+                                    <h3 className="widget-title mb-2"><a href="#Size" className={ `${toggleState.toLowerCase() == 'collapsed' ? 'collapsed' : ''}` } onClick={ ( e ) => { onToggle( e ); e.preventDefault() } }>Taille</a></h3>
                                     <div ref={ setCollapsibleElement }>
                                         <div className="widget-body pt-0">
                                             <div className="filter-items">
@@ -126,7 +126,7 @@ function ShopSidebarOne ( props ) {
                         {
                             ( { onToggle, setCollapsibleElement, toggleState } ) => (
                                 <div className="widget widget-collapsible">
-                                    <h3 className="widget-title mb-2"><a href="#colour" className={ `${toggleState.toLowerCase() == 'collapsed' ? 'collapsed' : ''}` } onClick={ ( e ) => { onToggle( e ); e.preventDefault() } }>Colour</a></h3>
+                                    <h3 className="widget-title mb-2"><a href="#colour" className={ `${toggleState.toLowerCase() == 'collapsed' ? 'collapsed' : ''}` } onClick={ ( e ) => { onToggle( e ); e.preventDefault() } }>Couleur</a></h3>
                                     <div ref={ setCollapsibleElement }>
                                         <div className="widget-body pt-0">
                                             <div className="filter-colors">
@@ -149,7 +149,7 @@ function ShopSidebarOne ( props ) {
                         {
                             ( { onToggle, setCollapsibleElement, toggleState } ) => (
                                 <div className="widget widget-collapsible">
-                                    <h3 className="widget-title mb-2"><a href="#brand" className={ `${toggleState.toLowerCase() == 'collapsed' ? 'collapsed' : ''}` } onClick={ ( e ) => { onToggle( e ); e.preventDefault() } }>Brand</a></h3>
+                                    <h3 className="widget-title mb-2"><a href="#brand" className={ `${toggleState.toLowerCase() == 'collapsed' ? 'collapsed' : ''}` } onClick={ ( e ) => { onToggle( e ); e.preventDefault() } }>Marque</a></h3>
                                     <div ref={ setCollapsibleElement }>
                                         <div className="widget-body pt-0">
                                             <div className="filter-items">
@@ -182,7 +182,7 @@ function ShopSidebarOne ( props ) {
                         { ( { onToggle, setCollapsibleElement, toggleState } ) => (
                             <div className="widget widget-collapsible">
                                 <h3 className="widget-title mb-2">
-                                    <a href="#price" className={ `${toggleState.toLowerCase() == 'collapsed' ? 'collapsed' : ''}` } onClick={ ( e ) => { onToggle( e ); e.preventDefault() } }>Price</a>
+                                    <a href="#price" className={ `${toggleState.toLowerCase() == 'collapsed' ? 'collapsed' : ''}` } onClick={ ( e ) => { onToggle( e ); e.preventDefault() } }>Prix</a>
                                 </h3>
 
                                 <div ref={ setCollapsibleElement }>
@@ -190,7 +190,7 @@ function ShopSidebarOne ( props ) {
                                         <div className="filter-price">
                                             <div className="filter-price-text d-flex justify-content-between">
                                                 <span>
-                                                    Price Range:&nbsp;
+                                                    Prix:&nbsp;
                                                     <span className="filter-price-range">${ priceRange.min } - ${ priceRange.max }</span>
                                                 </span>
 
