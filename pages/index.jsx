@@ -253,11 +253,11 @@ function Home () {
                                 </ALink>
 
                                 <div className="banner-content banner-content-bottom">
-                                    <h3 className="banner-title text-high-pink">Accessories</h3>
+                                    <h3 className="banner-title text-high-pink">Haut</h3>
 
                                     <h4 className="banner-subtitle">8 Products</h4>
 
-                                    <ALink href="/outfit/1" className="banner-link p-0">Shop Now</ALink>
+                                    <ALink href="#" className="banner-link p-0">Shop Now</ALink>
                                 </div>
                             </div>
                         </div>
@@ -278,11 +278,11 @@ function Home () {
                                 </ALink>
 
                                 <div className="banner-content banner-content-top">
-                                    <h3 className="banner-title text-high-pink">Shoes & Boots</h3>
+                                    <h3 className="banner-title text-high-pink">Pantalon et bas</h3>
 
-                                    <h4 className="banner-subtitle">15 Products</h4>
+                                    <h4 className="banner-subtitle">15 Produits</h4>
 
-                                    <ALink href="/outfit/1" className="banner-link p-0">Shop Now</ALink>
+                                    <ALink href="#" className="banner-link p-0">Voir plus</ALink>
                                 </div>
                             </div>
                         </div>
@@ -305,12 +305,12 @@ function Home () {
                                         </ALink>
 
                                         <div className="banner-content">
-                                            <h3 className="banner-title text-high-pink">Women</h3>
+                                            <h3 className="banner-title text-high-pink">Accessoires</h3>
 
-                                            <h4 className="banner-subtitle">18 Products</h4>
+                                            <h4 className="banner-subtitle">18 Produits</h4>
 
                                             <ALink
-                                                href="/outfit/1"
+                                                href="#"
                                                 className="banner-link p-0"
                                             >Shop Now</ALink>
                                         </div>
@@ -333,14 +333,14 @@ function Home () {
                                         </ALink>
 
                                         <div className="banner-content">
-                                            <h3 className="banner-title text-high-pink">Men</h3>
+                                            <h3 className="banner-title text-high-pink">Chaussures et Bottes</h3>
 
-                                            <h4 className="banner-subtitle">12 Products</h4>
+                                            <h4 className="banner-subtitle">12 Produits</h4>
 
                                             <ALink
-                                                href="/outfit/1"
+                                                href=""
                                                 className="banner-link p-0"
-                                            >Shop Now</ALink>
+                                            >Voir Plus</ALink>
                                         </div>
                                     </div>
                                 </div>
