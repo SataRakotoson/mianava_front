@@ -116,6 +116,10 @@ body {
     .computer {
         display: none !important
     }
+    .hero_image_cover {
+        max-width:160% !important;
+        width:154% !important
+    }
   }
   @media screen and (min-width: 992px) { /*SI ECRAN LARGE*/
     .mobile {

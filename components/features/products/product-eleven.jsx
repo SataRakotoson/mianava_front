@@ -159,11 +159,11 @@ function ProductEleven ( props ) {
                             {
                                 false > 0 ?
                                     <ALink href={`/product/12`} className="btn-product btn-cart btn-select">
-                                        <span>select options</span>
+                                        <span>Sélectionnez les variants</span>
                                     </ALink>
                                     :
                                     <button className="btn-product btn-cart" onClick={cartClick}>
-                                        <span>add to cart</span>
+                                        <span>Ajouter au panier</span>
                                     </button>
                             }
                         </div>

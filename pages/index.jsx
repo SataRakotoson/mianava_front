@@ -44,7 +44,7 @@ function Home () {
                     <div className="intro-slide" style={ { backgroundImage: 'url(images/import/hero_accueil.webp' } }>
                         {/*IMAGE ON COMPUTER */}
                         <LazyLoadImage
-                            className="computer"
+                            className="hero_image_cover"
                             alt="banner"
                             width={ 1500 }
                             height={ 250 }
@@ -55,7 +55,7 @@ function Home () {
                         <div className="container intro-content text-left">
                             <Reveal keyframes={ fadeInUpShorter } delay={ 100 } duration={ 1000 }>
                                 {/*IMAGE ON MOBILE */}
-                                <LazyLoadImage
+                                {/* <LazyLoadImage
                                     className="mobile"
                                         alt="banner"
                                         width={ 800 }
@@ -63,7 +63,7 @@ function Home () {
                                         src="images/import/texte_accueil.webp"
                                         threshold={ 200 }
                                         effect="opacity"
-                                    />
+                                    /> */}
                                 <>
                                     {/* <h3 className="intro-subtitle text-white">You're Looking Good</h3>
                                     <h1 className="intro-title text-white">New Lookbook</h1>
@@ -92,7 +92,8 @@ function Home () {
                     </div> */}
                 </OwlCarousel>
             </div>
-
+            
+            {/* SERVICES */}
             <div className="pt-10 pb-3">
                 <div className="container">
                     <h2 className="text-center text mb-4">Nos Services</h2>
@@ -244,7 +245,7 @@ function Home () {
                                         alt="banner"
                                         width={ 270 }
                                         height={ 549 }
-                                        src="images/category/grid/banner-1.jpg"
+                                        src="images/import/outfit_vertical_1.webp"
                                         threshold={ 200 }
                                         effect="opacity"
                                     />
@@ -252,7 +253,7 @@ function Home () {
                                 </ALink>
 
                                 <div className="banner-content banner-content-bottom">
-                                    <h3 className="banner-title">Accessories</h3>
+                                    <h3 className="banner-title text-high-pink">Accessories</h3>
 
                                     <h4 className="banner-subtitle">8 Products</h4>
 
@@ -270,14 +271,14 @@ function Home () {
                                         alt="banner"
                                         width={ 270 }
                                         height={ 549 }
-                                        src="images/category/grid/banner-4.jpg"
+                                        src="images/import/outfit_vertical_2.webp"
                                         threshold={ 200 }
                                         effect="opacity"
                                     />
                                 </ALink>
 
                                 <div className="banner-content banner-content-top">
-                                    <h3 className="banner-title">Shoes & Boots</h3>
+                                    <h3 className="banner-title text-high-pink">Shoes & Boots</h3>
 
                                     <h4 className="banner-subtitle">15 Products</h4>
 
@@ -297,14 +298,14 @@ function Home () {
                                                 alt="banner"
                                                 width={ 750 }
                                                 height={ 270 }
-                                                src="images/category/grid/banner-2.jpg"
+                                                src="images/import/outfit_horizontal_1.webp"
                                                 threshold={ 200 }
                                                 effect="opacity"
                                             />
                                         </ALink>
 
                                         <div className="banner-content">
-                                            <h3 className="banner-title">Women</h3>
+                                            <h3 className="banner-title text-high-pink">Women</h3>
 
                                             <h4 className="banner-subtitle">18 Products</h4>
 
@@ -325,14 +326,14 @@ function Home () {
                                                 alt="banner"
                                                 width={ 750 }
                                                 height={ 270 }
-                                                src="images/category/grid/banner-3.jpg"
+                                                src="images/import/outfit_horizontal_2.webp"
                                                 threshold={ 200 }
                                                 effect="opacity"
                                             />
                                         </ALink>
 
                                         <div className="banner-content">
-                                            <h3 className="banner-title">Men</h3>
+                                            <h3 className="banner-title text-high-pink">Men</h3>
 
                                             <h4 className="banner-subtitle">12 Products</h4>
 
