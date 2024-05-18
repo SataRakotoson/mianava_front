@@ -9,10 +9,14 @@ import DetailOne from '~/components/partials/product/details/detail-one';
 import InfoOne from '~/components/partials/product/info-tabs/info-one';
 import RelatedProductsOne from '~/components/partials/product/related/related-one';
 import PageHeader from '~/components/features/page-header';
+import { products } from '~/utils/products';
 
 function Product () {
     const slug = useRouter().query.slug;
     console.log({slug})
+    const product_slug = products.filter(product => product.product?.fieldData.slug == slug)
+    const product = product_slug[0]
+
     if ( !slug ) return <div></div>;
 
     // const { data, loading, error } = useQuery( GET_PRODUCT, { variables: { slug } } );
@@ -38,7 +42,7 @@ function Product () {
                                 <div className="skel-product-gallery"></div>
                                 {
                                     !false ?
-                                        <GalleryDefault />
+                                        <GalleryDefault product={product}/>
                                         : ""
                                 }
                             </div>
@@ -54,7 +58,7 @@ function Product () {
                                 </div>
                                 {
                                     !false ?
-                                        <DetailOne  />
+                                        <DetailOne  product={product}/>
                                         : ""
                                 }
                             </div>

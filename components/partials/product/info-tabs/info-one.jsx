@@ -29,16 +29,16 @@ function InfoOne ( props ) {
                     </Tab>
 
                     <Tab className="nav-item">
-                        <span className="nav-link"> Additional information</span>
+                        <span className="nav-link"> Livraison</span>
                     </Tab>
 
-                    <Tab className="nav-item">
+                    {/* <Tab className="nav-item">
                         <span className="nav-link">Shipping & Returns</span>
                     </Tab>
 
                     <Tab className="nav-item">
                         <span className="nav-link" >Reviews (2)</span>
-                    </Tab>
+                    </Tab> */}
                 </TabList>
 
                 <div className="tab-content">
@@ -57,21 +57,8 @@ function InfoOne ( props ) {
 
                     <TabPanel className="tab-pane">
                         <div className="product-desc-content">
-                            <h3>Information</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. </p>
-
-                            <h3 className="pt-2">Fabric & care</h3>
-                            <ul>
-                                <li>Faux suede fabric</li>
-                                <li>Gold tone metal hoop handles.</li>
-                                <li>RI branding</li>
-                                <li>Snake print trim interior </li>
-                                <li>Adjustable cross body strap</li>
-                                <li> Height: 31cm; Width: 32cm; Depth: 12cm; Handle Drop: 61cm</li>
-                            </ul>
-
-                            <h3>Size</h3>
-                            <p>one size</p>
+                            <h3>Livraison</h3>
+                            <p>Tous les devis, prix et délais de livraison sont sans engagement. Mianava est libre d'annuler l'offre à tout moment. L'annulation d'une offre reste possible, même après acceptation de l'acheteur, à condition que cela soit fait immédiatement</p>
                         </div>
                     </TabPanel>
 

@@ -190,7 +190,7 @@ function ProductEleven ( props ) {
                 </div>
 
                 <h3 className="product-title">
-                <ALink href='/product/12'>{product.product.fieldData.name}</ALink>
+                <ALink href={`/product/${product.product.fieldData.slug}`}>{product.product.fieldData.name}</ALink>
                     {/* <ALink href={ `` }>{product.product.fieldData.name}</ALink> */}
                 </h3>
 
