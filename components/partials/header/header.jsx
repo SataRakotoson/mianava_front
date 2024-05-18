@@ -98,9 +98,9 @@ function Header () {
                                         </div>
                                         <div className="dropdown-divider"></div>
                                         <Link id="home" className="menu-item" href="/">Accueil</Link>
-                                        <Link id="about" className="menu-item" href="/profile">Mon compte</Link>
-                                        <Link id="contact" className="menu-item" href="/about">Qui sommes-nous</Link>
-                                        <Link className="menu-item--small" href="/contact">Aide et contact</Link>
+                                        <Link id="about" className="menu-item" href="/">Mon compte</Link>
+                                        <Link id="contact" className="menu-item" href="/">Qui sommes-nous</Link>
+                                        <Link className="menu-item--small" href="/">Aide et contact</Link>
                                     </Menu>
                                 </div>
                                 <HeaderSearch />
