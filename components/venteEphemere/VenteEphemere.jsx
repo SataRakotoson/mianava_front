@@ -1,8 +1,10 @@
 import ALink from '~/components/features/alink';
 import ProductTwelve from '~/components/features/products/product-twelve';
+import { products } from '~/utils/products';
+import ProductEleven from '../features/products/product-eleven';
 
 function VenteEphemere ( props ) {
-
+const products_list = products
     return (
         <div className="container">
             <h2 className="text-center mb-4">Nos produits phares</h2>
@@ -17,9 +19,9 @@ function VenteEphemere ( props ) {
                         //         </div>
                         //     )
                         //     :
-                            [ 1, 2, 3, 4, 5, 6, 7, 8 ].map( ( product, index ) =>
+                        products_list.map( ( product, index ) =>
                                 <div className="col-6 col-md-4 col-lg-3" key={ index }>
-                                    <ProductTwelve product={ product } />
+                                    <ProductEleven product={ product } />
                                 </div>
                             )
                     }
