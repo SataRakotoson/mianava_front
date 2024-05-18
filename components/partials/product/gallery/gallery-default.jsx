@@ -10,8 +10,10 @@ import Gallery3 from '@/assets/images/gallery3.jpg'
 import Gallery4 from '@/assets/images/gallery4.jpg'
 
 function GalleryDefault ( props ) {
-    // const { product, adClass = "product-gallery-vertical" } = props;
-    const { adClass = "product-gallery-vertical" } = props;
+    const {product} = props
+    console.log('product in props', product)
+    const image_1 = product.product.fieldData['product-details-image-one']?.url
+  const { adClass = "product-gallery-vertical" } = props;
     const [ isOpen, setIsOpen ] = useState( false );
     const [ photoIndex, setPhotoIndex ] = useState( 0 );
     const [activeImage, setActiveImage] = useState(Gallery1)
@@ -20,19 +22,19 @@ function GalleryDefault ( props ) {
         [
             {
                 id:0,
-                image: Gallery1
+                image: image_1
             },
             {
                 id:1,
-                image: Gallery2
+                image: image_1
             },
             {
                 id:2,
-                image: Gallery3
+                image: image_1
             },
             {
                 id:3,
-                image: Gallery4
+                image: image_1
             },
         ]
     )

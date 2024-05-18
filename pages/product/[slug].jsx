@@ -16,6 +16,7 @@ function Product () {
     console.log({slug})
     const product_slug = products.filter(product => product.product?.fieldData.slug == slug)
     const product = product_slug[0]
+    console.log({product})
 
     if ( !slug ) return <div></div>;
 
