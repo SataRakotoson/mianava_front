@@ -13,21 +13,22 @@ const SAM = () => {
     <div>
         <div
             className="video-banner-bg bg-image"
-            style={ { backgroundImage: "url('images/covers/sam.png')" } }
+            // style={ { backgroundImage: "url('images/covers/sam.png')" } }
+            style={ { backgroundImage: "url('images/import/sam.webp')" } }
         >
-            <div className="container">
+            <div className="container invisible">
                 <h1 className="header-title text-high-pink">
-                    Service a la <br />
-                    Demande
+                    Service Achat <br />
+                    Mianava
                 </h1>
                 <p className='text-high-pink font-weight-bolder'>Vous choisissez, Nous achetons, Nous livrons</p>
-                <p className='text-high-pink font-weight-bolder'>C'est aussi simple que ca</p>
+                <p className='text-high-pink font-weight-bolder'>C'est aussi simple que ça</p>
             </div>
         </div>
         <div className="mt-10 mb-10">
             <div className="container">
                 <h2 className="mb-4 text-center">
-                    Comment ca marche
+                    SERVICE ACHAT MIANAVA
                 </h2>
 
                 <div className="row justify-content-center">
@@ -78,8 +79,8 @@ const SAM = () => {
                 <div className="row">
                     <div className="col-md-4">
                         <div className="contact-box text-center">
-                            <h3>Bureau</h3>
-                            <address>1 New York Plaza, New York, <br />NY 10004, USA</address>
+                            <h3>Adresse</h3>
+                            <address>Antananarivo, Madagascar</address>
                         </div>
                     </div>
 
@@ -87,8 +88,8 @@ const SAM = () => {
                         <div className="contact-box text-center">
                             <h3>Commencez une conversation</h3>
 
-                            <div><a href="mailto:#">info@Molla.com</a></div>
-                            <div><a href="tel:#">+1 987-876-6543</a>, <a href="tel:#">+1 987-976-1234</a></div>
+                            <div><a href="mailto:#">contact@mianava.com</a></div>
+                            {/* <div><a href="tel:#">+1 987-876-6543</a>, <a href="tel:#">+1 987-976-1234</a></div> */}
                         </div>
                     </div>
 
@@ -97,9 +98,9 @@ const SAM = () => {
                             <h3>Reseaux sociaux</h3>
 
                             <div className="social-icons social-icons-color justify-content-center">
-                                <ALink href="#" className="social-icon social-facebook" title="Facebook"><i className="icon-facebook-f"></i></ALink>
-                                <ALink href="#" className="social-icon social-instagram" title="Instagram"><i className="icon-instagram"></i></ALink>
-                                <ALink href="#" className="social-icon social-pinterest" title="Pinterest"><i className="icon-pinterest"></i></ALink>
+                                <ALink href="https://www.facebook.com/Mianavaofficiel/" className="social-icon social-facebook" title="Facebook"><i className="icon-facebook-f"></i></ALink>
+                                <ALink href="https://www.instagram.com/_mianava_/" className="social-icon social-instagram" title="Instagram"><i className="icon-instagram"></i></ALink>
+                                {/* <ALink href="#" className="social-icon social-pinterest" title="Pinterest"><i className="icon-pinterest"></i></ALink> */}
                             </div>
                         </div>
                     </div>
@@ -114,7 +115,7 @@ const SAM = () => {
 
                         <form action="#" className="contact-form mb-2">
 
-                            <label htmlFor="csubject" className="sr-only">Name</label>
+                            <label htmlFor="csubject" className="sr-only">Nom</label>
                             <input type="text" className="form-control" id="csubject" placeholder="Name" />
 
                             <label htmlFor="csubject" className="sr-only">Email</label>

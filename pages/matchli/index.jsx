@@ -13,9 +13,10 @@ const Matchli = () => {
     <div>
         <div
             className="video-banner-bg bg-image"
-            style={ { backgroundImage: "url('images/covers/matchli.png')" } }
+            // style={ { backgroundImage: "url('images/covers/matchli.png')" } }
+            style={ { backgroundImage: "url('images/import/matchli.webp')" } }
         >
-            <div className="container">
+            <div className="container invisible">
                 <h1 className="header-title text-high-pink">
                     Matchli
                 </h1>

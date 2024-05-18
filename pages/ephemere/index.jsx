@@ -15,9 +15,10 @@ const Ephemere = () => {
     <div>
         <div
             className="video-banner-bg bg-image"
-            style={ { backgroundImage: "url('images/covers/ephemere.png')" } }
+            // style={ { backgroundImage: "url('images/covers/ephemere.png')" } }
+            style={ { backgroundImage: "url('images/import/ephemere.webp')" } }
         >
-            <div className="container">
+            <div className="container invisible">
                 <h1 className="header-title text-high-pink">
                     Vente <br />
                     Ephemere
