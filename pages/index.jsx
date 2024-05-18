@@ -108,7 +108,7 @@ function Home () {
                                         alt="banner"
                                         width={ 370 }
                                         height={ 250 }
-                                        src="images/import/shop.webp"
+                                        src="images/import/shop_accueil.webp"
                                         threshold={ 200 }
                                         effect="opacity"
                                     />
@@ -129,7 +129,7 @@ function Home () {
                                         alt="banner"
                                         width={ 370 }
                                         height={ 250 }
-                                        src="images/import/matchli.webp"
+                                        src="images/import/matchli_accueil.webp"
                                         threshold={ 200 }
                                         effect="opacity"
                                     />
@@ -153,7 +153,7 @@ function Home () {
                                         alt="banner"
                                         width={ 370 }
                                         height={ 250 }
-                                        src="images/import/sam.webp"
+                                        src="images/import/sam_accueil.webp"
                                         threshold={ 200 }
                                         effect="opacity"
                                     />

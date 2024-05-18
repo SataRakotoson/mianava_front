@@ -8,7 +8,6 @@ const products_list = products
     return (
         <div className="container">
             <h2 className="text-center mb-4">Nos produits phares</h2>
-
             <div className="products">
                 <div className="row justify-content-center">
                     {
