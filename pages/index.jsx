@@ -359,14 +359,14 @@ function Home () {
                                         <i className="icon-truck"></i>
                                     </span>
                                     <div className="icon-box-content">
-                                        <h3 className="icon-box-title">Payment & Delivery</h3>
-                                        <p className="text-white">Free shipping for orders over $50</p>
+                                        <h3 className="icon-box-title">Paiement et livraison</h3>
+                                        <p className="text-white">Vos achats arrivent directement chez vous</p>
                                     </div>
                                 </div>
                             </Reveal>
                         </div>
 
-                        <div className="col-lg-3 col-sm-6">
+                        {/* <div className="col-lg-3 col-sm-6">
                             <Reveal keyframes={ fadeInRightShorter } delay={ 100 } duration={ 1000 } triggerOnce>
                                 <div className="icon-box text-center">
                                     <span className="icon-box-icon">
@@ -378,7 +378,7 @@ function Home () {
                                     </div>
                                 </div>
                             </Reveal>
-                        </div>
+                        </div> */}
 
                         <div className="col-lg-3 col-sm-6">
                             <Reveal keyframes={ fadeInLeftShorter } delay={ 100 } duration={ 1000 } triggerOnce>
@@ -387,8 +387,8 @@ function Home () {
                                         <i className="icon-unlock"></i>
                                     </span>
                                     <div className="icon-box-content">
-                                        <h3 className="icon-box-title">Secure Payment</h3>
-                                        <p className="text-white">100% secure payment</p>
+                                        <h3 className="icon-box-title">Paiement sécurisé</h3>
+                                        <p className="text-white">Paiement 100% sécurisé</p>
                                     </div>
                                 </div>
                             </Reveal>
@@ -401,8 +401,8 @@ function Home () {
                                         <i className="icon-headphones"></i>
                                     </span>
                                     <div className="icon-box-content">
-                                        <h3 className="icon-box-title">Quality Support</h3>
-                                        <p className="text-white">Alway online feedback 24/7</p>
+                                        <h3 className="icon-box-title">Assistance de qualité</h3>
+                                        <p className="text-white">Toujours disponible 24h/24 et 7j/7</p>
                                     </div>
                                 </div>
                             </Reveal>
@@ -416,6 +416,7 @@ function Home () {
                 </div>
             </div>
             
+            {/* GROUPAGE AERIEN */}
             <div className="container mt-10">
                 <div className="row">
                     <div className="col-12">
@@ -434,11 +435,11 @@ function Home () {
                             </ALink>
 
                             <div className="banner-content">
-                                <h4 className="banner-subtitle text-primary">Quisque a lectus</h4>
+                                {/* <h4 className="banner-subtitle text-primary"></h4> */}
                                 <h3 className="banner-title text-high-pink">Groupage <br />aerien.</h3>
-                                <p className="d-none d-lg-block">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, posuere a, pede.</p>
+                                <p className="d-none d-lg-block">Regroupez vos colis, Envoyez les nous. Nous nous occupons du reste</p>
 
-                                <ALink href="#" className="btn btn-primary btn-rounded"><span>Plus d'info</span><i className="icon-long-arrow-right"></i></ALink>
+                                <ALink href="/express" className="btn btn-primary btn-rounded"><span>Plus d'info</span><i className="icon-long-arrow-right"></i></ALink>
                             </div>
                         </div>
                     </div>

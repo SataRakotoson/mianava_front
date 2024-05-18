@@ -1,8 +1,10 @@
 import ALink from '~/components/features/alink';
-import ProductTwelve from '~/components/features/products/product-twelve';
+import ProductEleven from '~/components/features/products/product-eleven';
+// import ProductTwelve from '~/components/features/products/product-twelve';
+import { products } from '@/utils/products';
 
 function NewCollection ( props ) {
-
+    const products_mianava = products
     return (
         <div className="container">
             <h2 className="text-center mb-4">Nos produits phares</h2>
@@ -17,9 +19,10 @@ function NewCollection ( props ) {
                         //         </div>
                         //     )
                         //     :
-                        [ 1, 2, 3, 4, 5, 6, 7, 8 ].map( ( product, index ) =>
+                        products_mianava.filter(product => product.product?.fieldData["today-s-deals"]).map( ( product, index ) =>
                                 <div className="col-6 col-md-4 col-lg-3" key={ index }>
-                                    <ProductTwelve/>
+                                    {/* <ProductTwelve/> */}
+                                    <ProductEleven product={product}/>
                                 </div>
                             )
                     }

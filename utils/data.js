@@ -473,6 +473,12 @@ export const shopData = {
 
 export const homeData = {
     brands: [
+         {
+            "name": "proex",
+            "image": "images/import/proex.png",
+            "width": 100,
+            "height": 23
+        },
         {
             "name": "brand",
             "image": "images/brands/1.png",
@@ -521,12 +527,12 @@ export const homeData = {
             "width": 80,
             "height": 72
         },
-        {
-            "name": "brand",
-            "image": "images/brands/9.png",
-            "width": 100,
-            "height": 25
-        }
+        // {
+        //     "name": "brand",
+        //     "image": "images/brands/9.png",
+        //     "width": 100,
+        //     "height": 25
+        // }
     ]
 }
 
