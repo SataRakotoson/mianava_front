@@ -1,0 +1,127 @@
+@import './config/variables';
+
+.service-card, .outfit-card{
+    height: 200px;
+    padding: 0;
+}
+
+.text-pink{
+    color: #EBA9B5;
+}
+
+.text-high-pink{
+    color: #c02a41;
+}
+
+.header-title{
+    color: #c02a41;
+    font-size: 68px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.pricing-list{
+    ul{
+        li{
+            i{
+                color: #EBA9B5;
+                margin-right: 10px;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.banner-content-overlay-custom{
+    background-color: transparent;
+}
+
+.category-container{
+    .category{
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        .category-item{
+            background-color: #fff;
+            display: inline-block;
+            padding: 0 16px;
+            border-radius: 40px;
+            margin: 0 10px;
+            font-weight: 500;
+            height: fit-content;
+            cursor: pointer;
+            min-width: fit-content;
+            transition: 0.3s;
+    
+            &:hover{
+                background-color: #c02a41;
+                color: #fff;
+            }
+        }
+    }
+    @media(max-width: 860px){
+        .category{
+            position: absolute;
+            left: 0;
+            width: 100%;
+            .category-item{
+                font-size: 12px;
+                margin: 0 6px;
+            }
+        }
+    }
+}
+
+.purchase{
+    .purchase-item{
+        
+    }
+}
+
+.service-item{
+    height: 180px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    .image-link{
+        height: 100%;
+
+    }
+
+    .service-item-overlay{
+    }
+}
+
+.outfit-item{
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.groupage{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+body {
+    background-color: #fff3f5;
+}
+
+ /* media query */
+ @media screen and (max-width: 992px) { /*SI MOBILE*/
+    .computer {
+        display: none !important
+    }
+  }
+  @media screen and (min-width: 992px) { /*SI ECRAN LARGE*/
+    .mobile {
+        display: none !important
+    }
+    .service-item {
+        height: 290px;
+    }
+  }
