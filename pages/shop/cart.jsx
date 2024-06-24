@@ -7,10 +7,15 @@ import PageHeader from '~/components/features/page-header';
 
 import { actions as cartAction } from '~/store/cart';
 import { cartPriceTotal } from '~/utils/index';
+import { useStore } from '~/store/zustand';
 
 function Cart ( props ) {
     const [ cartList, setCartList ] = useState( [] );
     const [ shippingCost, setShippingCost ] = useState( 0 );
+
+    const cartData = useStore( ( state ) => state.cartData );
+    const total = useStore((state) => state.getTotal());
+    const removeFromCart = useStore((state) => state.removeFromCart);
 
     useEffect( () => {
         setCartList( props.cartItems );
@@ -55,7 +60,7 @@ function Cart ( props ) {
                 <div className="cart">
                     <div className="container">
                         {
-                            cartList.length > 0 ?
+                            cartData.length > 0 ?
                                 <div className="row">
                                     <div className="col-lg-9">
                                         <table className="table table-cart table-mobile">
@@ -70,14 +75,15 @@ function Cart ( props ) {
                                             </thead>
 
                                             <tbody>
-                                                { cartList.length > 0 ?
-                                                    cartList.map( ( item, index ) =>
+                                                { cartData.length > 0 ?
+                                                    cartData.map( ( item, index ) =>
                                                         <tr key={ index }>
                                                             <td className="product-col">
                                                                 <div className="product">
                                                                     <figure className="product-media">
                                                                         <ALink href={ `/product/default/${item.slug}` } className="product-image">
-                                                                            <img src={ process.env.NEXT_PUBLIC_ASSET_URI + item.sm_pictures[ 0 ].url } alt="product" />
+                                                                            <img src={item.product.fieldData["product-details-image-one"].url} alt="product" style={{height: '100%', objectFit: 'contain'}} />
+                                                                            {/* <img src={ process.env.NEXT_PUBLIC_ASSET_URI + item.sm_pictures[ 0 ].url } alt="product" /> */}
                                                                         </ALink>
                                                                     </figure>
 
@@ -88,25 +94,27 @@ function Cart ( props ) {
                                                             </td>
 
                                                             <td className="price-col">
-                                                                ${
+                                                                {/* ${
                                                                     item.sale_price ?
                                                                         item.sale_price.toLocaleString( undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 } )
                                                                         :
                                                                         item.price.toLocaleString( undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 } )
 
-                                                                }
+                                                                } */}
+                                                                {item.skus[0].fieldData.price.value}Ar
                                                             </td>
 
                                                             <td className="quantity-col">
-                                                                <Qty value={ item.qty } changeQty={ current => changeQty( current, index ) } adClass="cart-product-quantity"></Qty>
+                                                                {/* <Qty value={ item.qty } changeQty={ current => changeQty( current, index ) } adClass="cart-product-quantity"></Qty> */}
+                                                                1
                                                             </td>
 
                                                             <td className="total-col">
-                                                                ${ item.sum.toLocaleString( undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 } ) }
-                                                            </td>
+                                                                {/* ${ item.sum.toLocaleString( undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 } ) } */}
+                                                                {item.skus[0].fieldData.price.value}Ar                                                            </td>
 
                                                             <td className="remove-col">
-                                                                <button className="btn-remove" onClick={ () => props.removeFromCart( item ) }><i className="icon-close"></i></button>
+                                                                <button className="btn-remove" onClick={ () => removeFromCart(item)}><i className="icon-close"></i></button>
                                                             </td>
                                                         </tr>
                                                     ) :
@@ -204,7 +212,7 @@ function Cart ( props ) {
                                                     <tr className="summary-total">
                                                         <td>Total:</td>
                                                         <td>
-                                                            ${ ( cartPriceTotal( props.cartItems ) + shippingCost ).toLocaleString( undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 } ) }
+                                                            {total}Ar
                                                         </td>
                                                     </tr>
                                                 </tbody>
@@ -222,6 +230,7 @@ function Cart ( props ) {
                                     </aside>
                                 </div>
                                 :
+                                // PAS DE ITEM DANS LE PANIER
                                 <div className="row">
                                     <div className="col-12">
                                         <div className="cart-empty-page text-center">

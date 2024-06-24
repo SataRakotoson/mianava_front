@@ -16,16 +16,22 @@ import Hand1 from '@/assets/images/hand1.jpg'
 import Hand2 from '@/assets/images/hand2.jpg'
 
 import { toast } from 'react-toastify';
+import { useStore } from '~/store/zustand';
 
 function ProductEleven ( props ) {
     const router = useRouter();
     const { product } = props;
     // const [ maxPrice, setMaxPrice ] = useState( 0 );
     // const [ minPrice, setMinPrice ] = useState( 99999 );
+    
+    const addToCart = useStore((state) => state.addToCart)
+    const cartData = useStore((state) => state.cartData)
 
     
 
-    const cartClick = (e) => {
+    const cartClick = (product) => {
+        addToCart(product)
+        console.log('ATOO ', cartData)
         toast.success('Ajoute avec succes')
     }
 
@@ -162,7 +168,7 @@ function ProductEleven ( props ) {
                                         <span>Sélectionnez les variants</span>
                                     </ALink>
                                     :
-                                    <button className="btn-product btn-cart" onClick={cartClick}>
+                                    <button className="btn-product btn-cart" onClick={() => cartClick(product)}>
                                         <span>Ajouter au panier</span>
                                     </button>
                             }

@@ -1,53 +1,77 @@
+import { useEffect } from 'react';
 import { connect } from 'react-redux';
 
 import ALink from '~/components/features/alink';
 
 import { actions } from '~/store/cart';
+import { useStore } from '~/store/zustand';
 import { cartQtyTotal, cartPriceTotal } from '~/utils/index';
 
 function CartMenu ( props ) {
     const { cartlist } = props;
+    const cartData = useStore((state) => state.cartData);
+    const getTotal = useStore((state) => state.getTotal);
+    const getItemCount = useStore((state) => state.getItemCount);
+    const removeFromCart = useStore((state) => state.removeFromCart);
+
+    useEffect(() => {
+        const itemCount = getItemCount();
+        // console.log({ total });
+        console.log({ cartData });
+        console.log({ itemCount });
+    }, [cartData, getItemCount]);
+
+    const itemCount = getItemCount();
+    const total = getTotal();
 
     return (
         <div className="dropdown cart-dropdown">
             <ALink href="/shop/cart" className="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
                 <i className="icon-shopping-cart"></i>
-                <span className="cart-count">{ cartQtyTotal( cartlist ) }</span>
-                <span className="cart-txt font-weight-semibold">${ cartPriceTotal( cartlist ).toLocaleString( undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 } ) }</span>
+                <span className="cart-count">{itemCount}</span>
+                <span className="cart-txt font-weight-semibold">{total}Ar</span>
             </ALink>
 
-            <div className={ `dropdown-menu dropdown-menu-right ${cartlist.length === 0 ? 'text-center' : ''}` } >
+            <div className={ `dropdown-menu dropdown-menu-right ${cartData.length === 0 ? 'text-center' : ''}` } >
                 {
-                    0 === cartlist.length ?
+                    cartData.length === 0 ?
                         <p>No products in the cart.</p> :
                         <>
                             <div className="dropdown-cart-products">
-                                { cartlist.map( ( item, index ) => (
-                                    <div className="product justify-content-between" key={ index }>
-                                        <div className="product-cart-details">
-                                            <h4 className="product-title">
-                                                <ALink href={ `/product/default/${item.slug}` }>{ item.name }</ALink>
-                                            </h4>
+                                { 
+                                    cartData.map( ( item, index ) => {
+                                        return(
+                                            <div className="product justify-content-between" key={ index }>
+                                                <div className="product-cart-details">
+                                                    <h4 className="product-title">
+                                                        <ALink href={ `/product/default/${item.slug}` }>{ item.product?.fieldData.name }</ALink>
+                                                    </h4>
 
-                                            <span className="cart-product-info">
-                                                <span className="cart-product-qty">{ item.qty } </span>
-                                                 x ${ item.sale_price ? item.sale_price.toFixed( 2 ) : item.price.toFixed( 2 ) }
-                                            </span>
-                                        </div>
+                                                    <span className="cart-product-info">
+                                                        {/* <span className="cart-product-qty">{ item.qty } </span> */}
+                                                        {item.skus[0].fieldData.price.value}Ar
+                                                        {/* <span className="cart-product-qty">{ item.qty } </span>
+                                                        x ${ item.sale_price ? item.sale_price.toFixed( 2 ) : item.price.toFixed( 2 ) } */}
+                                                    </span>
+                                                </div>
 
-                                        <figure className="product-image-container ml-2">
-                                            <ALink href={ `/product/default/${item.slug}` } className="product-image">
-                                                <img src={ process.env.NEXT_PUBLIC_ASSET_URI + item.sm_pictures[ 0 ].url } alt="product" />
-                                            </ALink>
-                                        </figure>
-                                        <button className="btn-remove" title="Remove Product" onClick={ () => props.removeFromCart( item ) }><i className="icon-close"></i></button>
-                                    </div>
-                                ) ) }
+                                                <figure className="product-image-container ml-2">
+                                                    <ALink href={ `/product/default/${item.slug}` } className="product-image">
+                                                        <img src={item.product.fieldData["product-details-image-one"].url} alt="product" />
+                                                    </ALink>
+                                                </figure>
+                                                <button className="btn-remove" title="Remove Product" onClick={ () => removeFromCart(item)}><i className="icon-close"></i></button>
+                                            </div>
+                                        )
+                                    }
+                                    ) 
+                                }
                             </div>
                             <div className="dropdown-cart-total">
                                 <span>Total</span>
 
-                                <span className="cart-total-price">${ cartPriceTotal( cartlist ).toLocaleString( undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 } ) }</span>
+                                <span className="cart-total-price">{total}Ar</span>
+                                {/* <span className="cart-total-price">${ cartPriceTotal( cartlist ).toLocaleString( undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 } ) }</span> */}
                             </div>
 
                             <div className="dropdown-cart-action">
@@ -68,3 +92,4 @@ function mapStateToProps ( state ) {
 }
 
 export default connect( mapStateToProps, { ...actions } )( CartMenu );
+// export default CartMenu ;
