@@ -93,14 +93,17 @@ function Header () {
                                 <div className="mr-5">
                                     <Menu className='bg-dark'>
                                         <div>
-                                            <p className='text-white mb-1'>Hello, vous avez un compte ?</p>
-                                            <Link href='/' className='btn btn-primary text-white'>S'identifier</Link>
+                                            {/* <p className='text-white mb-1'>Hello, tu as un compte ?</p> */}
+                                            <Link href='/login' className='btn btn-primary text-white'>S'identifier</Link>
                                         </div>
                                         <div className="dropdown-divider"></div>
                                         <Link id="home" className="menu-item" href="/">Accueil</Link>
-                                        <Link id="about" className="menu-item" href="/">Mon compte</Link>
-                                        <Link id="contact" className="menu-item" href="/">Qui sommes-nous</Link>
-                                        <Link className="menu-item--small" href="/">Aide et contact</Link>
+                                        <div className="dropdown-divider"></div>
+                                        <Link id="profile" className="menu-item" href="/profile">Mon compte</Link>
+                                        <Link id="wishlist" className="menu-item" href="/shop/wishlist">My wishlist</Link>
+                                        <div className="dropdown-divider"></div>
+                                        <Link id="about" className="menu-item" href="/about">Qui sommes-nous</Link>
+                                        <Link id="contact" className="menu-item--small" href="/">Aide et contact</Link>
                                     </Menu>
                                 </div>
                                 <HeaderSearch />

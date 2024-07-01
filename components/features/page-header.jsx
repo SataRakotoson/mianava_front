@@ -6,7 +6,7 @@ function PageHeader ( props ) {
     return (
         <div className="page-header text-center"
         // style={ { backgroundImage: `url(images/page-header-bg.jpg)` } }
-        style={ { backgroundImage: `url(images/import/shop.webp)` } }
+        style={ { backgroundImage: `url(images/import/background-shop.png)` } }
          >
             <div className="container">
                 <h2 className="text-high-pink">{ title }</h2>

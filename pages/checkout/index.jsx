@@ -13,17 +13,18 @@ function Checkout ( props ) {
     const { cartlist } = props;
 
     useEffect( () => {
-        document.querySelector( 'body' ).addEventListener( "click", clearOpacity )
+        // A VOIR
+        // document.querySelector( 'body' ).addEventListener( "click", clearOpacity )
 
-        return () => {
-            document.querySelector( 'body' ).removeEventListener( "click", clearOpacity );
-        }
+        // return () => {
+        //     document.querySelector( 'body' ).removeEventListener( "click", clearOpacity );
+        // }
     }, [] )
 
-    function clearOpacity () {
-        if ( document.querySelector( '#checkout-discount-input' ).value == '' )
-            document.querySelector( '#checkout-discount-form label' ).removeAttribute( 'style' );
-    }
+    // function clearOpacity () {
+    //     if ( document.querySelector( '#checkout-discount-input' ).value == '' )
+    //         document.querySelector( '#checkout-discount-form label' ).removeAttribute( 'style' );
+    // }
 
     function addOpacity ( e ) {
         e.currentTarget.parentNode.querySelector( "label" ).setAttribute( "style", "opacity: 0" );
@@ -36,72 +37,69 @@ function Checkout ( props ) {
             <div className="page-content mt-8">
                 <div className="checkout">
                     <div className="container">
-                        <div className="checkout-discount">
+                        {/* <div className="checkout-discount">
                             <form action="#" id="checkout-discount-form">
                                 <input type="text" className="form-control" required id="checkout-discount-input" onClick={ addOpacity } />
                                 <label htmlFor="checkout-discount-input" className="text-truncate">Have a coupon? <span>Click here to enter your code</span></label>
                             </form>
-                        </div>
+                        </div> */}
 
                         <form action="#">
                             <div className="row">
                                 <div className="col-lg-9">
-                                    <h2 className="checkout-title">Billing Details</h2>
+                                    <h2 className="checkout-title">Détails de la facturation</h2>
                                     <div className="row">
                                         <div className="col-sm-6">
-                                            <label>First Name *</label>
+                                            <label>Prénom *</label>
                                             <input type="text" className="form-control" required />
                                         </div>
 
                                         <div className="col-sm-6">
-                                            <label>Last Name *</label>
+                                            <label>Nom *</label>
                                             <input type="text" className="form-control" required />
                                         </div>
                                     </div>
 
-                                    <label>Company Name (Optional)</label>
-                                    <input type="text" className="form-control" />
+                                    <label>Pays *</label>
+                                    <input type="text" className="form-control" value='Madagascar' required />
 
-                                    <label>Country *</label>
-                                    <input type="text" className="form-control" required />
-
-                                    <label>Street address *</label>
+                                    <label>Adresse *</label>
                                     <input type="text" className="form-control" placeholder="House number and Street name" required />
-                                    <input type="text" className="form-control" placeholder="Appartments, suite, unit etc ..." required />
+                                    {/* <input type="text" className="form-control" placeholder="Appartments, suite, unit etc ..." required /> */}
 
                                     <div className="row">
                                         <div className="col-sm-6">
-                                            <label>Town / City *</label>
+                                            <label>Ville *</label>
                                             <input type="text" className="form-control" required />
                                         </div>
 
-                                        <div className="col-sm-6">
+                                        {/* <div className="col-sm-6">
                                             <label>State / County *</label>
                                             <input type="text" className="form-control" required />
-                                        </div>
+                                        </div> */}
                                     </div>
 
                                     <div className="row">
                                         <div className="col-sm-6">
-                                            <label>Postcode / ZIP *</label>
+                                            <label>Code postal *</label>
                                             <input type="text" className="form-control" required />
                                         </div>
 
                                         <div className="col-sm-6">
-                                            <label>Phone *</label>
+                                            <label>Téléphone *</label>
                                             <input type="tel" className="form-control" required />
                                         </div>
                                     </div>
 
-                                    <label>Email address *</label>
+                                    <label>Adresse Email *</label>
                                     <input type="email" className="form-control" required />
 
-                                    <div className="custom-control custom-checkbox">
+                                    {/* <div className="custom-control custom-checkbox">
                                         <input type="checkbox" className="custom-control-input" id="checkout-create-acc" />
                                         <label className="custom-control-label" htmlFor="checkout-create-acc">Create an account?</label>
-                                    </div>
+                                    </div> */}
 
-                                    <SlideToggle duration={ 300 } collapsed >
+                                    {/* <SlideToggle duration={ 300 } collapsed >
                                         { ( { onToggle, setCollapsibleElement } ) => (
                                             <div className="form-group">
                                                 <div className="custom-control custom-checkbox mt-0 address-box">
@@ -185,10 +183,10 @@ function Checkout ( props ) {
                                                 </div>
                                             </div>
                                         ) }
-                                    </SlideToggle >
+                                    </SlideToggle > */}
 
-                                    <label>Order notes (optional)</label>
-                                    <textarea className="form-control" cols="30" rows="4" placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
+                                    <label>Remarques (optionnel)</label>
+                                    <textarea className="form-control" cols="30" rows="4" placeholder="Notes concernant votre commande, par ex. notes spéciales pour la livraison"></textarea>
                                 </div>
 
                                 <aside className="col-lg-3">

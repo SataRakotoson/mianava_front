@@ -16,7 +16,7 @@ function GalleryDefault ( props ) {
   const { adClass = "product-gallery-vertical" } = props;
     const [ isOpen, setIsOpen ] = useState( false );
     const [ photoIndex, setPhotoIndex ] = useState( 0 );
-    const [activeImage, setActiveImage] = useState(Gallery1)
+    const [activeImage, setActiveImage] = useState(product.skus[0].fieldData['main-image'].url)
 
     const [imageArray, setImageArray] = useState(
         [
@@ -27,15 +27,7 @@ function GalleryDefault ( props ) {
             {
                 id:1,
                 image: image_1
-            },
-            {
-                id:2,
-                image: image_1
-            },
-            {
-                id:3,
-                image: image_1
-            },
+            }
         ]
     )
 
@@ -128,7 +120,7 @@ function GalleryDefault ( props ) {
                             // height={ product.pictures[ 0 ].height }
                             // style={ { paddingTop: `${product.pictures[ 0 ].height / product.pictures[ 0 ].width * 100}%` } }
                             style={{
-                                height: "100%",
+                                height: "50rem",
                               }}
                         />
 

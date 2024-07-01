@@ -38,7 +38,7 @@ function MobileMenu () {
 
                 <form action="#" method="get" onSubmit={ onSubmitSearchForm } className="mobile-search">
                     <label htmlFor="mobile-search" className="sr-only">Search</label>
-                    <input type="text" className="form-control" value={ searchTerm } onChange={ onSearchChange } name="mobile-search" id="mobile-search" placeholder="Search product ..." required />
+                    <input type="text" className="form-control" value={ searchTerm } onChange={ onSearchChange } name="mobile-search" id="mobile-search" placeholder="Rechercher ..." required />
                     <button className="btn btn-primary" type="submit"><i className="icon-search"></i></button>
                 </form>
 

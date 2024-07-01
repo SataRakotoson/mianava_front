@@ -126,7 +126,7 @@ function HeaderSearch () {
                     <button className="btn btn-primary" type="submit"><i className="icon-search"></i></button>
                     <label htmlFor="q" className="sr-only" value={ searchTerm }
                         required>Search</label>
-                    <input type="text" onChange={ onSearchChange } value={ searchTerm } className="form-control" name="q" placeholder="Search product ..." required />
+                    <input type="text" onChange={ onSearchChange } value={ searchTerm } className="form-control" name="q" placeholder="Rechercher ..." required />
                     {/* <div className="live-search-list" onClick={ goProductPage }>
                         {
                             ( products.length > 0 && searchTerm.length > 2 ) ?

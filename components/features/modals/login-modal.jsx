@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router';
 import React, { useState, useEffect } from 'react';
 import Modal from 'react-modal';
 import { Tabs, TabList, Tab, TabPanel } from 'react-tabs';
@@ -40,10 +41,16 @@ function LoginModal () {
         setOpen( true );
     }
 
+    const router = useRouter()
+
+    const goToLogin = () => {
+        router.push('/login')
+    }
+
     return (
         <li className="login">
-            <a href="#" onClick={ openModal }><i className="icon-user"></i>Se connecter</a>
-            {
+            <a href="#" onClick={ goToLogin }><i className="icon-user"></i>Se connecter</a>
+            {/* {
                 open ?
                     <Modal
                         isOpen={ open }
@@ -171,7 +178,7 @@ function LoginModal () {
                         </div>
                     </Modal>
                     : ''
-            }
+            } */}
         </li>
     )
 }

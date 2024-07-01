@@ -145,15 +145,18 @@ function Cart ( props ) {
                                     </div>
                                     <aside className="col-lg-3">
                                         <div className="summary summary-cart">
-                                            <h3 className="summary-title">Cart Total</h3>
+                                            <h3 className="summary-title">Récapitulatif</h3>
 
                                             <table className="table table-summary">
                                                 <tbody>
                                                     <tr className="summary-subtotal">
-                                                        <td>Subtotal:</td>
-                                                        <td>${ cartPriceTotal( props.cartItems ).toLocaleString( undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 } ) }</td>
+                                                        <td>Sous total:</td>
+                                                        {/* <td>{ cartPriceTotal( props.cartItems ).toLocaleString( undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 } ) } Ar</td> */}
+                                                        <td>{ total} Ar</td>
                                                     </tr>
-                                                    <tr className="summary-shipping">
+
+                                                    {/* SHIPPING */}
+                                                    {/* <tr className="summary-shipping">
                                                         <td>Shipping:</td>
                                                         <td>&nbsp;</td>
                                                     </tr>
@@ -172,7 +175,7 @@ function Cart ( props ) {
                                                             </div>
                                                         </td>
                                                         <td>$0.00</td>
-                                                    </tr>
+                                                    </tr> */}
 
                                                     <tr className="summary-shipping-row">
                                                         <td>
@@ -220,9 +223,9 @@ function Cart ( props ) {
 
                                             <ALink
                                                 className="btn btn-outline-primary-2 btn-order btn-block"
-                                                href="/shop/checkout"
+                                                href="/checkout"
                                             >
-                                                PROCEED TO CHECKOUT
+                                                PASSER AU PAIEMENT
                                             </ALink>
                                         </div>
 
