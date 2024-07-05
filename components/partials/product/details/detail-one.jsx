@@ -11,6 +11,10 @@ import { actions as cartAction } from '~/store/cart';
 
 import { canAddToCart, isInWishlist } from '~/utils';
 
+import { useStore } from '~/store/zustand';
+import { toast } from 'react-toastify';
+
+
 function DetailOne ( props ) {
     const router = useRouter();
     const ref = useRef( null );
@@ -28,6 +32,8 @@ function DetailOne ( props ) {
     const product_detail = product.product.fieldData
     const product_sku = product.skus
 
+    const addToCart = useStore((state) => state.addToCart)
+
     // useEffect( () => {
     //     window.addEventListener( 'scroll', scrollHandler, {
     //         passive: true
@@ -37,6 +43,17 @@ function DetailOne ( props ) {
     //         window.removeEventListener( 'scroll', scrollHandler );
     //     }
     // }, [] )
+
+    useEffect(() => {
+        console.log({
+            product
+        })
+    }, [product])
+
+    const cartClick = (product) => {
+        addToCart(product)
+        toast.success('Ajoute avec succes')
+    }
 
     // useEffect( () => {
     //     let min = 99999;
@@ -372,13 +389,12 @@ function DetailOne ( props ) {
                 >
                     <span>add to cart</span>
                 </a> */}
-                <a
-                    href="#"
+                <button
                     className={ `btn-product btn-cart` }
-                    onClick={ e => onCartClick( e, 0 ) }
+                    onClick={() =>cartClick(product)}
                 >
                     <span>Ajouter au panier</span>
-                </a>
+                </button>
             </div >
 
             <div className="product-details-footer">
