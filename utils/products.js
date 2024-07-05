@@ -7664,3 +7664,518 @@
             ]
         }
     ]
+
+    export const productsWithCategory = [
+        {
+            "product": {
+                "id": "66293c932cbf63c9101acdb2",
+                "cmsLocaleId": null,
+                "lastPublished": "2024-04-25T08:19:49.165Z",
+                "lastUpdated": "2024-04-25T08:17:31.394Z",
+                "createdOn": "2024-04-24T17:08:35.298Z",
+                "isArchived": false,
+                "isDraft": false,
+                "fieldData": {
+                    "tax-category": "standard-taxable",
+                    "shippable": true,
+                    "vente-ephemere": false,
+                    "match-li": false,
+                    "new-arrivals": false,
+                    "sale": false,
+                    "today-s-deals": false,
+                    "nouveaute-du-jour": false,
+                    "ec-product-type": "ff42fee0113744f693a764e3431a9cc2",
+                    "product-details": "90 ml",
+                    "name": "Hugo Boss HUGO Deep Red ",
+                    "description": "L’eau de parfum Hugo Deep Red de la marque Hugo Boss vous apporte un sentiment immédiat d’exception. Ignorez les règles du quotidien et laissez-vous envoûter par l’énergie pure de la féminité et de la sensualité !",
+                    "product-details-image-one": {
+                        "fileId": "662a05e70772342b4ada225a",
+                        "url": "https://uploads-ssl.webflow.com/63e3d9a5757a1c001280fc6c/662a05e70772342b4ada225a_hugo-boss-hugo-deep-red-eau-de-parfum-pour-femme___130510.webp",
+                        "alt": null
+                    },
+                    "slug": "hugo-boss-hugo-deep-red",
+                    "product-details-image-two": {
+                        "fileId": "662a05eef4db4e193799b4b4",
+                        "url": "https://uploads-ssl.webflow.com/63e3d9a5757a1c001280fc6c/662a05eef4db4e193799b4b4_hugo-boss-hugo-deep-red-eau-de-parfum-pour-femme___220822.webp",
+                        "alt": null
+                    },
+                    brand: 
+                        {
+                            "brandId": "6629110f12c51338104ed79b",
+                            "brandName": "Sephora",
+                        }
+                    ,
+                    "category": [
+                        {
+                            "categoryId": "6629110f12c51338104ed79b",
+                            "categoryName": "Parfum",
+                        },
+                        {
+                            "categoryId": "6629110f12c51338104ed79b",
+                            "categoryName": "Femme",
+                        },
+                    ],
+                    "default-sku": "66293c94c920db95d69d677f"
+                }
+            },
+            "skus": [
+                {
+                    "id": "66293c94c920db95d69d677f",
+                    "cmsLocaleId": null,
+                    "lastPublished": "2024-04-25T08:19:49.165Z",
+                    "lastUpdated": "2024-04-25T08:17:30.451Z",
+                    "createdOn": "2024-04-24T17:08:36.283Z",
+                    "fieldData": {
+                        "ec-sku-billing-method": "one-time",
+                        "price": {
+                            "value": 162594,
+                            "unit": "MGA"
+                        },
+                        "sku-values": {},
+                        "download-files": [],
+                        "name": "Hugo Boss HUGO Deep Red ",
+                        "slug": "hugo-boss-hugo-deep-red",
+                        "main-image": {
+                            "fileId": "662a05eef4db4e193799b4b4",
+                            "url": "https://uploads-ssl.webflow.com/63e3d9a5757a1c001280fc6c/662a05eef4db4e193799b4b4_hugo-boss-hugo-deep-red-eau-de-parfum-pour-femme___220822.webp",
+                            "alt": null
+                        },
+                        "more-images": [],
+                        "product": "66293c932cbf63c9101acdb2"
+                    }
+                }
+            ]
+        },
+        {
+            "product": {
+                "id": "66293c4d3ded3474dbd8ce0d",
+                "cmsLocaleId": null,
+                "lastPublished": "2024-04-25T08:24:45.656Z",
+                "lastUpdated": "2024-04-25T08:22:55.101Z",
+                "createdOn": "2024-04-24T17:07:25.682Z",
+                "isArchived": false,
+                "isDraft": false,
+                "fieldData": {
+                    "tax-category": "standard-taxable",
+                    "shippable": true,
+                    "vente-ephemere": false,
+                    "match-li": false,
+                    "new-arrivals": false,
+                    "sale": false,
+                    "today-s-deals": true,
+                    "nouveaute-du-jour": false,
+                    "ec-product-type": "ff42fee0113744f693a764e3431a9cc2",
+                    "product-details": "75 ml",
+                    "name": "Jil Sander Sun",
+                    "description": "Remémorez la période estivale grâce à l’eau de toilette Jil Sander Sun. Humez et retrouvez-vous soudainement sur une plage exotique où règnent le soleil et le bien-être.",
+                    "slug": "jil-sander-sun",
+                    "product-details-image-one": {
+                        "fileId": "66293c216319a4357c5afe53",
+                        "url": "https://uploads-ssl.webflow.com/63e3d9a5757a1c001280fc6c/66293c216319a4357c5afe53_jil-sander-sun-eau-de-toilette-pour-femme___121112.webp",
+                        "alt": null
+                    },
+                    "product-details-image-two": {
+                        "fileId": "66293c23fe28f5a240408126",
+                        "url": "https://uploads-ssl.webflow.com/63e3d9a5757a1c001280fc6c/66293c23fe28f5a240408126_jil-sander-sun-eau-de-toilette-pour-femme___220831.webp",
+                        "alt": null
+                    },
+                    brand: 
+                        {
+                            "brandId": "6629110f12c51338104ed79b",
+                            "brandName": "Vans",
+                        }
+                    ,
+                    "category": [
+                        {
+                            "categoryId": "6629110f12c51338104ed79b",
+                            "categoryName": "Parfum",
+                        },
+                        {
+                            "categoryId": "6629110f12c51338104ed79b",
+                            "categoryName": "Homme",
+                        },
+                    ],
+                    "default-sku": "66293c4e7e6a820e1933a5d0"
+                }
+            },
+            "skus": [
+                {
+                    "id": "66293c4e7e6a820e1933a5d0",
+                    "cmsLocaleId": null,
+                    "lastPublished": "2024-04-25T08:24:45.656Z",
+                    "lastUpdated": "2024-04-25T08:22:54.674Z",
+                    "createdOn": "2024-04-24T17:07:26.536Z",
+                    "fieldData": {
+                        "ec-sku-billing-method": "one-time",
+                        "price": {
+                            "value": 62570,
+                            "unit": "MGA"
+                        },
+                        "sku-values": {},
+                        "download-files": [],
+                        "name": "Jil Sander Sun",
+                        "slug": "jil-sander-sun",
+                        "main-image": {
+                            "fileId": "66293c23fe28f5a240408126",
+                            "url": "https://uploads-ssl.webflow.com/63e3d9a5757a1c001280fc6c/66293c23fe28f5a240408126_jil-sander-sun-eau-de-toilette-pour-femme___220831.webp",
+                            "alt": null
+                        },
+                        "more-images": [],
+                        "product": "66293c4d3ded3474dbd8ce0d"
+                    }
+                }
+            ]
+        },
+        {
+            "product": {
+                "id": "66293bf54d2658c291afe06c",
+                "cmsLocaleId": null,
+                "lastPublished": "2024-04-25T06:08:09.850Z",
+                "lastUpdated": "2024-04-25T06:08:01.700Z",
+                "createdOn": "2024-04-24T17:05:57.967Z",
+                "isArchived": false,
+                "isDraft": false,
+                "fieldData": {
+                    "tax-category": "standard-taxable",
+                    "shippable": true,
+                    "vente-ephemere": false,
+                    "match-li": false,
+                    "new-arrivals": false,
+                    "sale": false,
+                    "today-s-deals": true,
+                    "nouveaute-du-jour": false,
+                    "ec-product-type": "ff42fee0113744f693a764e3431a9cc2",
+                    "product-details": "100 ml",
+                    "name": "Jeanne Arthes Amore Mio White Pearl ",
+                    "description": "Arrêtez-vous, respirez et appréciez votre côté féminin magique. L’Eau de Parfum pour femme Jeanne Arthes Amore Mio White Pearl apporte un parfum plein de sensualité et vous enveloppe de notes florales révélant les aspects séduisants de la personnalité féminine. Osez être confiante et expressive, tout en vous autorisant à faire une pause dans vos pensées.",
+                    "slug": "jeanne-arthes-amore-mio-white-pearl",
+                    "product-details-image-one": {
+                        "fileId": "6629f3296c6d6acbfc9149a6",
+                        "url": "https://uploads-ssl.webflow.com/63e3d9a5757a1c001280fc6c/6629f3296c6d6acbfc9149a6_jeanne-arthes-amore-mio-white-pearl-eau-de-parfum-pour-femme___201209.webp",
+                        "alt": null
+                    },
+                    "product-details-image-two": {
+                        "fileId": "66293b82fd8286eca98f2bb4",
+                        "url": "https://uploads-ssl.webflow.com/63e3d9a5757a1c001280fc6c/66293b82fd8286eca98f2bb4_bait-al-bakhoor-khashab-al-oudh-eau-de-parfum-mixte___2111004.webp",
+                        "alt": null
+                    },
+                    brand: 
+                        {
+                            "brandId": "6629110f12c51338104ed79b",
+                            "brandName": "Sephora",
+                        }
+                    ,
+                    "category": [
+                        {
+                            "categoryId": "6629110f12c51338104ed79b",
+                            "categoryName": "Parfum",
+                        },
+                        {
+                            "categoryId": "6629110f12c51338104ed79b",
+                            "categoryName": "Femme",
+                        },
+                    ],
+                    "default-sku": "66293bf6a86a6b6fa2dfbc28"
+                }
+            },
+            "skus": [
+                {
+                    "id": "66293bf6a86a6b6fa2dfbc28",
+                    "cmsLocaleId": null,
+                    "lastPublished": "2024-04-25T06:08:09.850Z",
+                    "lastUpdated": "2024-04-25T06:08:01.277Z",
+                    "createdOn": "2024-04-24T17:05:58.939Z",
+                    "fieldData": {
+                        "ec-sku-billing-method": "one-time",
+                        "price": {
+                            "value": 27496,
+                            "unit": "MGA"
+                        },
+                        "sku-values": {},
+                        "download-files": [],
+                        "name": "Jeanne Arthes Amore Mio White Pearl ",
+                        "slug": "jeanne-arthes-amore-mio-white-pearl",
+                        "main-image": {
+                            "fileId": "6629f3296c6d6acbfc9149a6",
+                            "url": "https://uploads-ssl.webflow.com/63e3d9a5757a1c001280fc6c/6629f3296c6d6acbfc9149a6_jeanne-arthes-amore-mio-white-pearl-eau-de-parfum-pour-femme___201209.webp",
+                            "alt": null
+                        },
+                        "more-images": [
+                            {
+                                "fileId": "6629f332674edc73f52b749a",
+                                "url": "https://uploads-ssl.webflow.com/63e3d9a5757a1c001280fc6c/6629f332674edc73f52b749a_jeanne-arthes-amore-mio-white-pearl-eau-de-parfum-pour-femme___220929.webp",
+                                "alt": null
+                            }
+                        ],
+                        "product": "66293bf54d2658c291afe06c"
+                    }
+                }
+            ]
+        },
+        {
+            "product": {
+                "id": "66293baefe28f5a24040006c",
+                "cmsLocaleId": null,
+                "lastPublished": "2024-04-25T08:29:50.457Z",
+                "lastUpdated": "2024-04-25T08:26:09.346Z",
+                "createdOn": "2024-04-24T17:04:46.468Z",
+                "isArchived": false,
+                "isDraft": false,
+                "fieldData": {
+                    "tax-category": "standard-taxable",
+                    "shippable": true,
+                    "vente-ephemere": false,
+                    "match-li": false,
+                    "new-arrivals": false,
+                    "sale": false,
+                    "today-s-deals": true,
+                    "nouveaute-du-jour": false,
+                    "ec-product-type": "ff42fee0113744f693a764e3431a9cc2",
+                    "product-details": "100 ml",
+                    "name": "Bait Al Bakhoor Khashab Al Oudh ",
+                    "description": "Plongez dans un parfum oriental qui éveillera vos sens et imprimera votre peau de notes aromatiques épicées. L’Eau de Parfum mixte Bait Al Bakhoor Khashab Al Oudh convient à ceux qui n'ont pas peur de se démarquer de la foule et d'accentuer parfaitement leur charme personnel. Avec ce parfum, n'ayez pas peur de l'emprunter à votre bien-aimé, utilisez-la tous les deux et réunissez-vous en un seul corps sensuel.",
+                    "slug": "bait-al-bakhoor-khashab-al-oudh",
+                    "product-details-image-one": {
+                        "fileId": "662a132e71d3c388912e4712",
+                        "url": "https://uploads-ssl.webflow.com/63e3d9a5757a1c001280fc6c/662a132e71d3c388912e4712_bait-al-bakhoor-khashab-al-oudh-eau-de-parfum-mixte___211004.webp",
+                        "alt": null
+                    },
+                    "product-details-image-two": {
+                        "fileId": "662a1333af01df76bded111c",
+                        "url": "https://uploads-ssl.webflow.com/63e3d9a5757a1c001280fc6c/662a1333af01df76bded111c_bait-al-bakhoor-khashab-al-oudh-eau-de-parfum-mixte___2110014.webp",
+                        "alt": null
+                    },
+                    brand: 
+                        {
+                            "brandId": "6629110f12c51338104ed79b",
+                            "brandName": "Vans",
+                        }
+                    ,
+                    "category": [
+                        {
+                            "categoryId": "6629110f12c51338104ed79b",
+                            "categoryName": "Parfum",
+                        },
+                        {
+                            "categoryId": "6629110f12c51338104ed79b",
+                            "categoryName": "Homme",
+                        },
+                    ],
+                    "default-sku": "66293bb035aaee183dc8194c"
+                }
+            },
+            "skus": [
+                {
+                    "id": "66293bb035aaee183dc8194c",
+                    "cmsLocaleId": null,
+                    "lastPublished": "2024-04-25T08:29:50.457Z",
+                    "lastUpdated": "2024-04-25T08:26:08.992Z",
+                    "createdOn": "2024-04-24T17:04:48.174Z",
+                    "fieldData": {
+                        "ec-sku-billing-method": "one-time",
+                        "price": {
+                            "value": 66364,
+                            "unit": "MGA"
+                        },
+                        "sku-values": {},
+                        "download-files": [],
+                        "name": "Bait Al Bakhoor Khashab Al Oudh ",
+                        "slug": "bait-al-bakhoor-khashab-al-oudh",
+                        "more-images": [],
+                        "product": "66293baefe28f5a24040006c",
+                        "main-image": {
+                            "fileId": "662a132e71d3c388912e4712",
+                            "url": "https://uploads-ssl.webflow.com/63e3d9a5757a1c001280fc6c/662a132e71d3c388912e4712_bait-al-bakhoor-khashab-al-oudh-eau-de-parfum-mixte___211004.webp",
+                            "alt": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "product": {
+                "id": "66293b50b6ec9500f88fbcaf",
+                "cmsLocaleId": null,
+                "lastPublished": "2024-04-25T06:04:51.042Z",
+                "lastUpdated": "2024-04-24T17:03:48.000Z",
+                "createdOn": "2024-04-24T17:03:12.930Z",
+                "isArchived": false,
+                "isDraft": false,
+                "fieldData": {
+                    "tax-category": "standard-taxable",
+                    "shippable": true,
+                    "vente-ephemere": false,
+                    "match-li": false,
+                    "new-arrivals": false,
+                    "sale": false,
+                    "today-s-deals": true,
+                    "nouveaute-du-jour": false,
+                    "ec-product-type": "ff42fee0113744f693a764e3431a9cc2",
+                    "product-details": "100 ml",
+                    "name": "Jean-Louis Scherrer Jean-Louis Scherrer 1979 ",
+                    "description": "Complétez votre tenue de soirée d’un bijou qui ne passera jamais de mode : un parfum absolument parfait. L’eau de toilette pour femmes Jean-Louis Scherrer Jean-Louis Scherrer 1979 vous enveloppe d’une aura de sensualité secrète. Grâce à ses senteurs exceptionnelles, il parera de façon inoubliable votre peau aussi bien qu’une pierre précieuse.",
+                    "slug": "jean-louis-scherrer-jean-louis-scherrer-1979",
+                    "product-details-image-one": {
+                        "fileId": "66293b33a080a6347c27e5eb",
+                        "url": "https://uploads-ssl.webflow.com/63e3d9a5757a1c001280fc6c/66293b33a080a6347c27e5eb_jean-louis-scherrer-jean-louis-scherrer-1979-eau-de-toilette-pour-femme___160127.webp",
+                        "alt": null
+                    },
+                    "product-details-image-two": {
+                        "fileId": "66293b36600813508891efbd",
+                        "url": "https://uploads-ssl.webflow.com/63e3d9a5757a1c001280fc6c/66293b36600813508891efbd_jean-louis-scherrer-jean-louis-scherrer-1979-eau-de-toilette-pour-femme___220516.webp",
+                        "alt": null
+                    },
+                    brand: 
+                        {
+                            "brandId": "6629110f12c51338104ed79b",
+                            "brandName": "Sephora",
+                        }
+                    ,
+                    "category": [
+                        {
+                            "categoryId": "6629110f12c51338104ed79b",
+                            "categoryName": "Parfum",
+                        },
+                        {
+                            "categoryId": "6629110f12c51338104ed79b",
+                            "categoryName": "Homme",
+                        },
+                    ],
+                    "default-sku": "66293b51fd8286eca98eedf3"
+                }
+            },
+            "skus": [
+                {
+                    "id": "66293b51fd8286eca98eedf3",
+                    "cmsLocaleId": null,
+                    "lastPublished": "2024-04-25T06:04:51.042Z",
+                    "lastUpdated": "2024-04-24T17:03:13.900Z",
+                    "createdOn": "2024-04-24T17:03:13.900Z",
+                    "fieldData": {
+                        "ec-sku-billing-method": "one-time",
+                        "compare-at-price": null,
+                        "width": null,
+                        "length": null,
+                        "height": null,
+                        "price": {
+                            "value": 220377,
+                            "unit": "MGA"
+                        },
+                        "weight": null,
+                        "ec-sku-subscription-plan": null,
+                        "sku-values": {},
+                        "sku": null,
+                        "download-files": [],
+                        "name": "Jean-Louis Scherrer Jean-Louis Scherrer 1979 ",
+                        "slug": "jean-louis-scherrer-jean-louis-scherrer-1979",
+                        "main-image": {
+                            "fileId": "66293b33a080a6347c27e5eb",
+                            "url": "https://uploads-ssl.webflow.com/63e3d9a5757a1c001280fc6c/66293b33a080a6347c27e5eb_jean-louis-scherrer-jean-louis-scherrer-1979-eau-de-toilette-pour-femme___160127.webp",
+                            "alt": null
+                        },
+                        "more-images": [
+                            {
+                                "fileId": "66293b36600813508891efbd",
+                                "url": "https://uploads-ssl.webflow.com/63e3d9a5757a1c001280fc6c/66293b36600813508891efbd_jean-louis-scherrer-jean-louis-scherrer-1979-eau-de-toilette-pour-femme___220516.webp",
+                                "alt": null
+                            }
+                        ],
+                        "product": "66293b50b6ec9500f88fbcaf"
+                    }
+                }
+            ]
+        },
+        {
+            "product": {
+                "id": "66293b0c35aaee183dc76dca",
+                "cmsLocaleId": null,
+                "lastPublished": "2024-04-25T06:04:51.042Z",
+                "lastUpdated": "2024-04-24T17:02:07.541Z",
+                "createdOn": "2024-04-24T17:02:04.806Z",
+                "isArchived": false,
+                "isDraft": false,
+                "fieldData": {
+                    "tax-category": "standard-taxable",
+                    "shippable": true,
+                    "vente-ephemere": false,
+                    "match-li": false,
+                    "new-arrivals": false,
+                    "sale": false,
+                    "today-s-deals": true,
+                    "nouveaute-du-jour": false,
+                    "ec-product-type": "ff42fee0113744f693a764e3431a9cc2",
+                    "product-details": "60 ml",
+                    "name": "Lattafa Ana Abiyedh ",
+                    "description": "Enveloppez-vous d’un parfum qui s’adaptera parfaitement à vous et deviendra votre signature personnelle. L’eau de parfum unisexe Lattafa Ana Abiyedh vous séduira dès les premières notes, et elle ne cessera de vous surprendre.",
+                    "slug": "lattafa-ana-abiyedh",
+                    "product-details-image-one": {
+                        "fileId": "66293af44d2658c291aeb292",
+                        "url": "https://uploads-ssl.webflow.com/63e3d9a5757a1c001280fc6c/66293af44d2658c291aeb292_lattafa-ana-abiyedh-eau-de-parfum-mixte___230616.webp",
+                        "alt": null
+                    },
+                    "product-details-image-two": {
+                        "fileId": "66293af79e6d12e05b413a87",
+                        "url": "https://uploads-ssl.webflow.com/63e3d9a5757a1c001280fc6c/66293af79e6d12e05b413a87_lattafa-ana-abiyedh-eau-de-parfum-mixte___2306161.webp",
+                        "alt": null
+                    },
+                    brand: 
+                        {
+                            "brandId": "6629110f12c51338104ed79b",
+                            "brandName": "Vans",
+                        }
+                    ,
+                    "category": [
+                        {
+                            "categoryId": "6629110f12c51338104ed79b",
+                            "categoryName": "Parfum",
+                        },
+                        {
+                            "categoryId": "6629110f12c51338104ed79b",
+                            "categoryName": "Femme",
+                        },
+                    ],
+                    "default-sku": "66293b0ddb5c5d3469f68b8a"
+                }
+            },
+            "skus": [
+                {
+                    "id": "66293b0ddb5c5d3469f68b8a",
+                    "cmsLocaleId": null,
+                    "lastPublished": "2024-04-25T06:04:51.042Z",
+                    "lastUpdated": "2024-04-24T17:02:05.905Z",
+                    "createdOn": "2024-04-24T17:02:05.905Z",
+                    "fieldData": {
+                        "ec-sku-billing-method": "one-time",
+                        "compare-at-price": null,
+                        "width": null,
+                        "length": null,
+                        "height": null,
+                        "price": {
+                            "value": 96207,
+                            "unit": "MGA"
+                        },
+                        "weight": null,
+                        "ec-sku-subscription-plan": null,
+                        "sku-values": {},
+                        "sku": null,
+                        "download-files": [],
+                        "name": "Lattafa Ana Abiyedh ",
+                        "slug": "lattafa-ana-abiyedh",
+                        "main-image": {
+                            "fileId": "66293af44d2658c291aeb292",
+                            "url": "https://uploads-ssl.webflow.com/63e3d9a5757a1c001280fc6c/66293af44d2658c291aeb292_lattafa-ana-abiyedh-eau-de-parfum-mixte___230616.webp",
+                            "alt": null
+                        },
+                        "more-images": [
+                            {
+                                "fileId": "66293af79e6d12e05b413a87",
+                                "url": "https://uploads-ssl.webflow.com/63e3d9a5757a1c001280fc6c/66293af79e6d12e05b413a87_lattafa-ana-abiyedh-eau-de-parfum-mixte___2306161.webp",
+                                "alt": null
+                            }
+                        ],
+                        "product": "66293b0c35aaee183dc76dca"
+                    }
+                }
+            ]
+        }
+    ]
