@@ -22,6 +22,7 @@ import OutfitOfTheDay from "~/components/outfitOfTheDay/OutfitOfTheDay";
 import Link from "next/link";
 import VenteEphemere from "~/components/venteEphemere/VenteEphemere";
 import CategoryTop from "~/components/features/category-top";
+import Outfits from "~/components/outfits";
 
 function Home () {
     // const { data, loading, error } = useQuery( GET_HOME_DATA );
@@ -54,42 +55,9 @@ function Home () {
                         />
                         <div className="container intro-content text-left">
                             <Reveal keyframes={ fadeInUpShorter } delay={ 100 } duration={ 1000 }>
-                                {/*IMAGE ON MOBILE */}
-                                {/* <LazyLoadImage
-                                    className="mobile"
-                                        alt="banner"
-                                        width={ 800 }
-                                        height={ 250 }
-                                        src="images/import/texte_accueil.webp"
-                                        threshold={ 200 }
-                                        effect="opacity"
-                                    /> */}
-                                <>
-                                    {/* <h3 className="intro-subtitle text-white">You're Looking Good</h3>
-                                    <h1 className="intro-title text-white">New Lookbook</h1>
-
-                                    <ALink href="/shop/sidebar/list" className="btn btn-outline-white-4">
-                                        <span>Voir les produits</span>
-                                    </ALink> */}
-                                </>
                             </Reveal>
                         </div>
                     </div>
-
-                    {/* <div className="intro-slide" style={ { backgroundImage: 'url(images/home/cover2.png' } }>
-                        <div className="container intro-content text-center">
-                            <Reveal keyframes={ fadeInUpShorter } delay={ 100 } duration={ 1000 }>
-                                <>
-                                    <h3 className="intro-subtitle text-white">Don’t Miss</h3>
-                                    <h1 className="intro-title text-white">Mysrety Deals</h1>
-
-                                    <ALink href="/shop/sidebar/list" className="btn btn-outline-white-4">
-                                        <span>Discover More</span>
-                                    </ALink>
-                                </>
-                            </Reveal>
-                        </div>
-                    </div> */}
                 </OwlCarousel>
             </div>
             
@@ -185,49 +153,6 @@ function Home () {
                                 </div>
                             </div>
                         </div>
-                        {/* MIANAVA EXPRESS */}
-                        {/* <div className="col-md-6 col-lg-4">
-                            <div className="banner banner-cat service-item">
-                                <ALink href="#" className='image-link'>
-                                    <div className="lazy-overlay"></div>
-
-                                    <LazyLoadImage
-                                        alt="banner"
-                                        width={ 370 }
-                                        height={ 250 }
-                                        src="images/services/express.webp"
-                                        threshold={ 200 }
-                                        effect="opacity"
-                                    />
-                                </ALink>
-
-                                <div className="banner-content banner-content-overlay banner-content-overlay-custom text-center">
-                                    <Link href="/express" className="banner-link p-0">Plus d'info</Link>
-                                </div>
-                            </div>
-                        </div> */}
-
-                        {/* PARTNER */}
-                        {/* <div className="col-md-6 col-lg-4">
-                            <div className="banner banner-cat service-item">
-                                <ALink href="#" className='image-link'>
-                                    <div className="lazy-overlay"></div>
-
-                                    <LazyLoadImage
-                                        alt="banner"
-                                        width={ 370 }
-                                        height={ 250 }
-                                        src="images/services/partner.png"
-                                        threshold={ 200 }
-                                        effect="opacity"
-                                    />
-                                </ALink>
-
-                                <div className="banner-content banner-content-overlay banner-content-overlay-custom text-center">
-                                    <Link href="/partner" className="banner-link p-0">Plus d'info</Link>
-                                </div>
-                            </div>
-                        </div> */}
                     </div>
                     <hr className="mt-5 mb-0" />
                 </div>
@@ -236,116 +161,26 @@ function Home () {
                 <div className="container">
                     <h2 className="text-center mb-4">Outfits du jours</h2>
                     <div className="row justify-content-center">
-                        <div className="col-sm-6 col-lg-3">
-                            <div className="banner banner-cat banner-link-anim banner-large outfit-item">
-                                <ALink href="#">
-                                    <div className="lazy-overlay"></div>
-
-                                    <LazyLoadImage
-                                        alt="banner"
-                                        width={ 270 }
-                                        height={ 549 }
-                                        src="images/import/outfit_vertical_1.webp"
-                                        threshold={ 200 }
-                                        effect="opacity"
-                                    />
-
-                                </ALink>
-
-                                <div className="banner-content banner-content-bottom">
-                                    <h3 className="banner-title text-high-pink">Haut</h3>
-
-                                    <h4 className="banner-subtitle">8 Products</h4>
-
-                                    <ALink href="#" className="banner-link p-0">Shop Now</ALink>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-sm-6 col-lg-3 order-lg-last">
-                            <div className="banner banner-cat banner-link-anim banner-large outfit-item">
-                                <ALink href="#">
-                                    <div className="lazy-overlay"></div>
-
-                                    <LazyLoadImage
-                                        alt="banner"
-                                        width={ 270 }
-                                        height={ 549 }
-                                        src="images/import/outfit_vertical_2.webp"
-                                        threshold={ 200 }
-                                        effect="opacity"
-                                    />
-                                </ALink>
-
-                                <div className="banner-content banner-content-top">
-                                    <h3 className="banner-title text-high-pink">Pantalon et bas</h3>
-
-                                    <h4 className="banner-subtitle">15 Produits</h4>
-
-                                    <ALink href="#" className="banner-link p-0">Voir plus</ALink>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-6">
-                            <div className="row">
-                                <div className="col-sm-6 col-lg-12">
-                                    <div className="banner banner-cat banner-link-anim outfit-item" >
+                        {
+                            [1,2,3,4].map((item, index) => 
+                                <div key={index} className="col-3">
+                                    <div className="banner banner-cat banner-link-anim banner-large outfit-item">
                                         <ALink href="#">
                                             <div className="lazy-overlay"></div>
 
                                             <LazyLoadImage
                                                 alt="banner"
-                                                width={ 750 }
-                                                height={ 270 }
-                                                src="images/import/outfit_horizontal_1.webp"
+                                                width={ 270 }
+                                                height={ 549 }
+                                                src="images/import/outfitDuJour.webp"
                                                 threshold={ 200 }
                                                 effect="opacity"
                                             />
                                         </ALink>
-
-                                        <div className="banner-content">
-                                            <h3 className="banner-title text-high-pink">Accessoires</h3>
-
-                                            <h4 className="banner-subtitle">18 Produits</h4>
-
-                                            <ALink
-                                                href="#"
-                                                className="banner-link p-0"
-                                            >Shop Now</ALink>
-                                        </div>
                                     </div>
                                 </div>
-
-                                <div className="col-sm-6 col-lg-12">
-                                    <div className="banner banner-cat banner-link-anim outfit-item">
-                                        <ALink href="#">
-                                            <div className="lazy-overlay"></div>
-
-                                            <LazyLoadImage
-                                                alt="banner"
-                                                width={ 750 }
-                                                height={ 270 }
-                                                src="images/import/outfit_horizontal_2.webp"
-                                                threshold={ 200 }
-                                                effect="opacity"
-                                            />
-                                        </ALink>
-
-                                        <div className="banner-content">
-                                            <h3 className="banner-title text-high-pink">Chaussures et Bottes</h3>
-
-                                            <h4 className="banner-subtitle">12 Produits</h4>
-
-                                            <ALink
-                                                href=""
-                                                className="banner-link p-0"
-                                            >Voir Plus</ALink>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                            )
+                        }
                     </div>
                 </div>
             </div>
@@ -418,7 +253,7 @@ function Home () {
             </div>
             
             {/* GROUPAGE AERIEN */}
-            <div className="container mt-10">
+            {/* <div className="container mt-10">
                 <div className="row">
                     <div className="col-12">
                         <div className="banner banner-big rounded groupage">
@@ -436,7 +271,6 @@ function Home () {
                             </ALink>
 
                             <div className="banner-content">
-                                {/* <h4 className="banner-subtitle text-primary"></h4> */}
                                 <h3 className="banner-title text-high-pink">Groupage <br />aerien.</h3>
                                 <p className="d-none d-lg-block">Regroupez vos colis, Envoyez les nous. Nous nous occupons du reste</p>
 
@@ -445,13 +279,16 @@ function Home () {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             <div className="mb-6"></div>
+
+            {/* NOS PRODUITS PHARES */}
             <Reveal keyframes={ fadeIn } delay={ 100 } duration={ 1000 } triggerOnce>
                 <NewCollection />
             </Reveal>
 
+            {/* NOS PARTENAIRES */}
             <div className="pb-3">
                 <Reveal keyframes={ fadeIn } delay={ 100 } duration={ 1000 } triggerOnce>
                     <div className="container brands pt-5 pt-lg-7">
@@ -471,11 +308,10 @@ function Home () {
                 </Reveal>
 
                 <div className="mb-5 mb-lg-7"></div>
-
             </div>
 
             <div className="container mb-10">
-                    <h2 className="text-center mb-3">About us</h2>
+                    <h2 className="text-center mb-3">A propos de nous</h2>
 
                         <blockquote className="testimonial text-center">
                             <img src="images/testimonials/user-1.jpg" alt="user" />
