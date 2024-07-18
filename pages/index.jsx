@@ -23,6 +23,8 @@ import Link from "next/link";
 import VenteEphemere from "~/components/venteEphemere/VenteEphemere";
 import CategoryTop from "~/components/features/category-top";
 import Outfits from "~/components/outfits";
+import InstagramFeed from "~/components/instagramFeed";
+import Chat from "~/components/Chat";
 
 function Home () {
     // const { data, loading, error } = useQuery( GET_HOME_DATA );
@@ -288,6 +290,10 @@ function Home () {
                 <NewCollection />
             </Reveal>
 
+            {/* FEED INSTAGRAM */}
+            <InstagramFeed />
+
+
             {/* NOS PARTENAIRES */}
             <div className="pb-3">
                 <Reveal keyframes={ fadeIn } delay={ 100 } duration={ 1000 } triggerOnce>
@@ -310,18 +316,22 @@ function Home () {
                 <div className="mb-5 mb-lg-7"></div>
             </div>
 
+            {/* A PROPOS DE NOUS */}
             <div className="container mb-10">
-                    <h2 className="text-center mb-3">A propos de nous</h2>
+                <h2 className="text-center mb-3">A propos de nous</h2>
 
-                        <blockquote className="testimonial text-center">
-                            <img src="images/testimonials/user-1.jpg" alt="user" />
-                            <p style={{fontSize: 20}}>“ Mianava est bien plus qu'une entreprise de vente en ligne et de groupage aérien. Nous sommes une communauté qui prône les valeurs d'amour et de partage. Nous croyons que chaque petit geste de générosité peut faire une grande différence dans le monde. C'est pourquoi nous sommes déterminés à offrir des services qui non seulement répondent à vos besoins, mais qui encouragent également la solidarité et l'empathie. Bienvenue chez Mianava, où le partage et l'amour sont au cœur de tout ce que nous faisons. ”</p>
+                    <blockquote className="testimonial text-center">
+                        <img src="images/testimonials/user-1.jpg" alt="user" />
+                        <p style={{fontSize: 20}}>“ Mianava est bien plus qu'une entreprise de vente en ligne et de groupage aérien. Nous sommes une communauté qui prône les valeurs d'amour et de partage. Nous croyons que chaque petit geste de générosité peut faire une grande différence dans le monde. C'est pourquoi nous sommes déterminés à offrir des services qui non seulement répondent à vos besoins, mais qui encouragent également la solidarité et l'empathie. Bienvenue chez Mianava, où le partage et l'amour sont au cœur de tout ce que nous faisons. ”</p>
 
-                            <cite>
-                                Mianava
-                            </cite>
-                        </blockquote>
-                </div>
+                        <cite>
+                            Mianava
+                        </cite>
+                    </blockquote>
+            </div>
+            
+            {/* CHAT */}
+            <Chat/>
         </main>
     )
 }
