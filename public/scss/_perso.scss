@@ -140,6 +140,19 @@ body {
     background: none !important;
 }
 
+// PASSWORD
+.input-password {
+    input {
+        border-right: none;
+    }
+    .input-group-text {
+        cursor: pointer;
+        background: #fafafa;
+        border-color: #ebebeb;
+        border-left: none !important
+    }
+}
+
 // PRODUCT CARD
 .product-7 .product-media::before {
     background-image: linear-gradient(#f0f0f0 250px, transparent 0);
