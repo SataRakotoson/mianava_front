@@ -30,7 +30,7 @@ const Matchli = () => {
                         <div className="col-sm-4">
                             <Reveal keyframes={ fadeInLeftShorter } delay={ 100 } duration={ 1000 } triggerOnce>
                                 <div className="banner banner-overlay">
-                                    <ALink href="/shop/sidebar/3cols" className="lazy-media">
+                                    <ALink href="/shop/?category=Homme" className="lazy-media">
                                         <div className="lazy-overlay"></div>
 
                                         <LazyLoadImage
@@ -46,7 +46,7 @@ const Matchli = () => {
                                     <div className="banner-content banner-content-center">
                                         <h4 className="banner-subtitle text-white"><ALink href="/shop/sidebar/3cols">New in</ALink></h4>
                                         <h3 className="banner-title text-white"><ALink href="/shop/sidebar/3cols"><strong>Homme</strong></ALink></h3>
-                                        <ALink href="/shop/sidebar/3cols?category=women" className="btn btn-outline-white banner-link underline">Shop Now</ALink>
+                                        <ALink href="/shop/?category=Homme" className="btn btn-outline-white banner-link underline">Shop Now</ALink>
                                     </div>
                                 </div>
                             </Reveal>
@@ -55,7 +55,7 @@ const Matchli = () => {
                         <div className="col-sm-4">
                             <Reveal keyframes={ fadeInRightShorter } delay={ 100 } duration={ 1000 } triggerOnce>
                                 <div className="banner banner-overlay">
-                                    <ALink href="/shop/sidebar/3cols" className="lazy-media">
+                                    <ALink href="/shop/?category=Femme" className="lazy-media">
                                         <div className="lazy-overlay"></div>
 
                                         <LazyLoadImage
@@ -71,7 +71,7 @@ const Matchli = () => {
                                     <div className="banner-content banner-content-center">
                                         <h4 className="banner-subtitle text-white"><ALink href="/shop/sidebar/3cols">New in</ALink></h4>
                                         <h3 className="banner-title text-white"><ALink href="/shop/sidebar/3cols"><strong>Femme</strong></ALink></h3>
-                                        <ALink href="/shop/sidebar/3cols?category=men" className="btn btn-outline-white banner-link underline">Shop Now</ALink>
+                                        <ALink href="/shop/?category=Femme" className="btn btn-outline-white banner-link underline">Shop Now</ALink>
                                     </div>
                                 </div>
                             </Reveal>
@@ -79,7 +79,7 @@ const Matchli = () => {
                         <div className="col-sm-4">
                             <Reveal keyframes={ fadeInRightShorter } delay={ 100 } duration={ 1000 } triggerOnce>
                                 <div className="banner banner-overlay">
-                                    <ALink href="/shop/sidebar/3cols" className="lazy-media">
+                                    <ALink href="/shop/?category=Enfant" className="lazy-media">
                                         <div className="lazy-overlay"></div>
 
                                         <LazyLoadImage
