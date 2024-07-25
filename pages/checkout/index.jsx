@@ -196,7 +196,7 @@ function Checkout ( props ) {
                                         <table className="table table-summary">
                                             <thead>
                                                 <tr>
-                                                    <th>Product</th>
+                                                    <th>Produit</th>
                                                     <th>Total</th>
                                                 </tr>
                                             </thead>
@@ -210,16 +210,16 @@ function Checkout ( props ) {
                                                     </tr>
                                                 ) }
                                                 <tr className="summary-subtotal">
-                                                    <td>Subtotal:</td>
-                                                    <td>${ cartPriceTotal( cartlist ).toLocaleString( undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 } ) }</td>
+                                                    <td>Sous total:</td>
+                                                    <td>{ cartPriceTotal( cartlist ).toLocaleString( undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 } ) } MGA</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Shipping:</td>
-                                                    <td>Free Shipping</td>
+                                                    <td>Livraison:</td>
+                                                    <td>Gratuite</td>
                                                 </tr>
                                                 <tr className="summary-total">
                                                     <td>Total:</td>
-                                                    <td>${ cartPriceTotal( cartlist ).toLocaleString( undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 } ) }</td>
+                                                    <td>{ cartPriceTotal( cartlist ).toLocaleString( undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 } ) } MGA</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -255,8 +255,8 @@ function Checkout ( props ) {
                                         </Accordion>
 
                                         <button type="submit" className="btn btn-outline-primary-2 btn-order btn-block">
-                                            <span className="btn-text">Place Order</span>
-                                            <span className="btn-hover-text">Proceed to Checkout</span>
+                                            <span className="btn-text">Effectuer la commande</span>
+                                            <span className="btn-hover-text">Passer au paiement</span>
                                         </button>
                                     </div>
                                 </aside>

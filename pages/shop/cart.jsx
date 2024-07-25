@@ -66,9 +66,9 @@ function Cart ( props ) {
                                         <table className="table table-cart table-mobile">
                                             <thead>
                                                 <tr>
-                                                    <th>Product</th>
-                                                    <th>Price</th>
-                                                    <th>Quantity</th>
+                                                    <th>Produit</th>
+                                                    <th>Prixs</th>
+                                                    <th>Quantité</th>
                                                     <th>Total</th>
                                                     <th></th>
                                                 </tr>
@@ -132,7 +132,7 @@ function Cart ( props ) {
                                             <div className="cart-discount">
                                                 <form action="#">
                                                     <div className="input-group">
-                                                        <input type="text" className="form-control" required placeholder="coupon code" />
+                                                        <input type="text" className="form-control" required placeholder="Code promo" />
                                                         <div className="input-group-append">
                                                             <button className="btn btn-outline-primary-2" type="submit"><i className="icon-long-arrow-right"></i></button>
                                                         </div>
@@ -140,7 +140,7 @@ function Cart ( props ) {
                                                 </form>
                                             </div>
 
-                                            <button className="btn btn-outline-dark-2" onClick={ updateCart }><span>UPDATE CART</span><i className="icon-refresh"></i></button>
+                                            {/* <button className="btn btn-outline-dark-2" onClick={ updateCart }><span>UPDATE CART</span><i className="icon-refresh"></i></button> */}
                                         </div>
                                     </div>
                                     <aside className="col-lg-3">
@@ -176,9 +176,10 @@ function Cart ( props ) {
                                                         </td>
                                                         <td>$0.00</td>
                                                     </tr> */}
-
+                                                    
+                                                       
                                                     <tr className="summary-shipping-row">
-                                                        <td>
+                                                        {/* <td> 
                                                             <div className="custom-control custom-radio">
                                                                 <input type="radio"
                                                                     id="standard-shipping"
@@ -189,28 +190,13 @@ function Cart ( props ) {
                                                                 <label className="custom-control-label" htmlFor="standard-shipping">Standard:</label>
                                                             </div>
                                                         </td>
-                                                        <td>$10.00</td>
+                                                        <td>$10.00</td> */}
                                                     </tr>
 
-                                                    <tr className="summary-shipping-row">
-                                                        <td>
-                                                            <div className="custom-control custom-radio">
-                                                                <input type="radio"
-                                                                    id="express-shipping"
-                                                                    name="shipping"
-                                                                    className="custom-control-input"
-                                                                    onChange={ ( e ) => onChangeShipping( 20 ) }
-                                                                />
-                                                                <label className="custom-control-label" htmlFor="express-shipping">Express:</label>
-                                                            </div>
-                                                        </td>
-                                                        <td>$20.00</td>
-                                                    </tr>
-
-                                                    <tr className="summary-shipping-estimate">
+                                                    {/* <tr className="summary-shipping-estimate">
                                                         <td>Estimate for Your Country<br /> <ALink href="/shop/dashboard">Change address</ALink></td>
                                                         <td>&nbsp;</td>
-                                                    </tr>
+                                                    </tr> */}
 
                                                     <tr className="summary-total">
                                                         <td>Total:</td>
@@ -219,17 +205,19 @@ function Cart ( props ) {
                                                         </td>
                                                     </tr>
                                                 </tbody>
+                                                
                                             </table>
+                                            <p> Livraison offerte dès 25 000Ar</p>
 
                                             <ALink
-                                                className="btn btn-outline-primary-2 btn-order btn-block"
+                                                className="btn btn-outline-primary-2 btn-order btn-block mt-5"
                                                 href="/checkout"
                                             >
                                                 PASSER AU PAIEMENT
                                             </ALink>
                                         </div>
 
-                                        <ALink href="/shop/sidebar/list" className="btn btn-outline-dark-2 btn-block mb-3"><span>CONTINUE SHOPPING</span><i className="icon-refresh"></i></ALink>
+                                        <ALink href="/shop/sidebar/list" className="btn btn-outline-dark-2 btn-block mb-3"><span>CONTINUER L'ACHAT</span><i className="icon-refresh"></i></ALink>
                                     </aside>
                                 </div>
                                 :
@@ -238,12 +226,12 @@ function Cart ( props ) {
                                     <div className="col-12">
                                         <div className="cart-empty-page text-center">
                                             <i className="cart-empty icon-shopping-cart" style={ { lineHeight: 1, fontSize: '15rem' } }></i>
-                                            <p className="px-3 py-2 cart-empty mb-3">No products added to the cart</p>
+                                            <p className="px-3 py-2 cart-empty mb-3">Pas de produits ajoutés dans le panier</p>
                                             <p className="return-to-shop mb-0">
                                                 <ALink
                                                     href="/shop/sidebar/list"
                                                     className="btn btn-primary"
-                                                >RETURN TO SHOP</ALink>
+                                                >RETOURNER A LA BOUTIQUE</ALink>
                                             </p>
                                         </div>
                                     </div>
