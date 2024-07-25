@@ -23,7 +23,7 @@ import Link from "next/link";
 import VenteEphemere from "~/components/venteEphemere/VenteEphemere";
 import CategoryTop from "~/components/features/category-top";
 import Outfits from "~/components/outfits";
-import InstagramFeed from "~/components/instagramFeed";
+import InstagramFeed from "~/components/InstagramFeed";
 import Chat from "~/components/Chat";
 
 function Home () {
