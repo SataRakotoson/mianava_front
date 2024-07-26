@@ -116,7 +116,8 @@ function Footer () {
                         <img src="images/import/payments/visa.svg" className='rounded' alt="Payment methods" width="80" height="45" />
                         <img src="images/import/payments/orange.svg" className='mx-2 rounded' alt="Payment methods" width="80" height="45" />
                         <img src="images/import/payments/mvola.svg" className='mx-2 rounded' alt="Payment methods" width="80" height="45" />
-                        <img src="images/import/payments/paypal.svg" className='rounded' alt="Payment methods" width="80" height="45" />
+                        <img src="images/import/payments/paypal.svg" className='mx-2 rounded' alt="Payment methods" width="80" height="45" />
+                        <img src="images/import/payments/mastercard.svg" className='rounded' alt="Payment methods" width="80" height="45" />
                     </figure>
                     <h4 className='text-white'>Mianava</h4>
                     <p
