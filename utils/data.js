@@ -370,76 +370,28 @@ export const shopData = {
 
     "brands": [
         {
-            brand: "Sephora",
-            slug: "next"
+            brandId: "edfdsfdsf",
+            brandName: "Sephora"
         },
         {
-            brand: "Etam",
-            slug: "river-island"
+            brandId: "edfdsfdsf",
+            brandName: "Vans"
         },
-        {
-            brand: "Vans",
-            slug: "geox"
-        },
-        {
-            brand: "Emma",
-            slug: "nex-balance"
-        },
-        {
-            brand: "Crocs",
-            slug: "ugg"
-        },
-        {
-            brand: "Nike",
-            slug: "f-and-f"
-        },
-        {
-            brand: "Petronas",
-            slug: "nike"
-        }
     ],
 
     "categories": [
         {
-            name: "Homme",
-            slug: "furniture",
-            count: 8
+            categoryId: "sd123é&dfds",
+            categoryName: "Homme",
         },
         {
-            name: "Femme",
-            slug: "coffee-and-tables",
-            count: 1
+            categoryId: "sd123é&dfds",
+            categoryName: "Femme",
         },
         {
-            name: "Enfant",
-            slug: "lighting",
-            count: 3
+            categoryId: "sd123é&dfds",
+            categoryName: "Parfum",
         },
-        {
-            name: "Parfum",
-            slug: "decoration",
-            count: 5
-        },
-        {
-            name: "Soin Visage",
-            slug: "electronics",
-            count: 1
-        },
-        {
-            name: "Maquillage",
-            slug: "beds",
-            count: 2
-        },
-        {
-            name: "Soin corps et cheveux",
-            slug: "armchairs-and-chaises",
-            count: 3
-        },
-        {
-            name: "Chaussures",
-            slug: "sofas-and-sleeper-sofas",
-            count: 1
-        }
     ],
 
     "prices": [

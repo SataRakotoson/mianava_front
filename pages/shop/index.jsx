@@ -13,13 +13,14 @@ import withApollo from '~/server/apollo';
 import { GET_PRODUCTS } from '~/server/queries';
 import { scrollToPageContent } from '~/utils';
 import ProtectedRoute, { withAuth } from '~/components/withAuth';
-import { products } from '@/utils/products';
+// import { products } from '@/utils/products';
+import { productsWithCategory } from '@/utils/products';
 
 function Shop() {
     const router = useRouter();
     // const type = router.query.type;
     // const type = '3cols';
-    // const query = router.query;
+    
     // const [ getProducts, { data, loading, error } ] = useLazyQuery( GET_PRODUCTS );
     // const [ firstLoading, setFirstLoading ] = useState( false );
     // const [ perPage, setPerPage ] = useState( 5 );
@@ -27,7 +28,11 @@ function Shop() {
     const [ toggle, setToggle ] = useState( false );
     // const products = data && data.products.data;
     // const totalCount = data && data.products.totalCount;
-    const products_mianava = products
+
+    const [products, setProducts] = useState(productsWithCategory);
+    const [originalProducts, setOriginalProducts] = useState(productsWithCategory);
+    const products_mianava = productsWithCategory
+    // const products_mianava = products
 
     // useEffect( () => {
     //     window.addEventListener( "resize", resizeHandle );
@@ -63,6 +68,31 @@ function Shop() {
 
     //     scrollToPageContent();
     // }, [ query, perPage ] )
+    const query = router.query;
+    useEffect(() => {
+        let updatedProducts = originalProducts;
+        console.log({updatedProducts})
+        // console.log('CATEGORY ',updatedProducts[0].product.fieldData.category)
+        if (query.category) {
+            updatedProducts = updatedProducts.filter(product => {
+                console.log('Product categories:', product.product.fieldData.category);
+                return product.product.fieldData.category.some(cat => cat.categoryName === query.category);
+            });
+            setProducts(updatedProducts)
+          }
+        if (query.brand) {
+            const selectedBrands = query.brand.split(',');
+            updatedProducts = updatedProducts.filter(product =>
+                selectedBrands.includes(product.product.fieldData.brand.brandName)
+            );            
+            setProducts(updatedProducts)
+        }
+        if (query.minPrice && query.maxPrice) {
+            updatedProducts = updatedProducts.filter(product => product.skus[0].fieldData.price.value >= query.minPrice && product.skus[0].fieldData.price.value <= query.maxPrice);
+            setProducts(updatedProducts)
+        }
+        scrollToPageContent();
+    }, [query])
 
     // useEffect( () => {
     //     if ( products ) setFirstLoading( true );
@@ -214,7 +244,8 @@ function Shop() {
                                 </div>
                             </div >
 
-                            <ShopListOne products={ products_mianava }></ShopListOne>
+                            {/* <ShopListOne products={ products_mianava }></ShopListOne> */}
+                            <ShopListOne products={ products }></ShopListOne>
                             {/* <ShopListOne products={ products } perPage={ perPage } loading={ loading }></ShopListOne> */}
 
                             {/* {

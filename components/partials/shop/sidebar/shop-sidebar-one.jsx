@@ -11,13 +11,13 @@ function ShopSidebarOne ( props ) {
     const { toggle = false } = props;
     const router = useRouter();
     const query = useRouter().query;
-    const [ priceRange, setRange ] = useState( { min: 0, max: 1000 } );
+    const [ priceRange, setRange ] = useState( { min: 0, max: 1000000 } );
 
     useEffect( () => {
         if ( query.minPrice && query.maxPrice ) {
             setRange( { min: parseInt( query.minPrice ), max: parseInt( query.maxPrice ) } );
         } else {
-            setRange( { min: 0, max: 1000 } );
+            setRange( { min: 0, max: 1000000 } );
         }
     }, [ query ] )
 
@@ -79,7 +79,7 @@ function ShopSidebarOne ( props ) {
                                             {
                                                 shopData.categories.map( ( item, index ) =>
                                                     <div className="filter-item" key={ `cat_${index}` }>
-                                                        <ALink className={ `${query.category == item.slug ? 'active' : ''}` } href={ {pathname: router.pathname, query: { type: query.type, category: item.slug } } } scroll={ false }>{ item.name }</ALink>
+                                                        <ALink className={ `${query.category == item.categoryName ? 'active' : ''}` } href={ {pathname: router.pathname, query: { category: item.categoryName } } } scroll={ false }>{ item.categoryName }</ALink>
                                                         <span className="item-count">{ item.count }</span>
                                                     </div>
                                                 )
@@ -91,7 +91,7 @@ function ShopSidebarOne ( props ) {
                         ) }
                     </SlideToggle>
 
-                    <SlideToggle collapsed={ false }>
+                    {/* <SlideToggle collapsed={ false }>
                         {
                             ( { onToggle, setCollapsibleElement, toggleState } ) => (
                                 <div className="widget widget-collapsible">
@@ -120,9 +120,9 @@ function ShopSidebarOne ( props ) {
                                 </div>
                             )
                         }
-                    </SlideToggle>
+                    </SlideToggle> */}
 
-                    <SlideToggle collapsed={ false }>
+                    {/* <SlideToggle collapsed={ false }>
                         {
                             ( { onToggle, setCollapsibleElement, toggleState } ) => (
                                 <div className="widget widget-collapsible">
@@ -143,7 +143,7 @@ function ShopSidebarOne ( props ) {
                                 </div>
                             )
                         }
-                    </SlideToggle>
+                    </SlideToggle> */}
 
                     <SlideToggle collapsed={ false }>
                         {
@@ -162,10 +162,10 @@ function ShopSidebarOne ( props ) {
                                                                 <input type="checkbox"
                                                                     className="custom-control-input"
                                                                     id={ `brand-${index + 1}` }
-                                                                    onChange={ e => onAttrClick( e, 'brand', item.slug ) }
-                                                                    checked={ containsAttrInUrl( 'brand', item.slug ) ? true : false }
+                                                                    onChange={ e => onAttrClick( e, 'brand', item.brandName ) }
+                                                                    checked={ containsAttrInUrl( 'brand', item.brandName ) ? true : false }
                                                                 />
-                                                                <label className="custom-control-label" htmlFor={ `brand-${index + 1}` }>{ item.brand }</label>
+                                                                <label className="custom-control-label" htmlFor={ `brand-${index + 1}` }>{ item.brandName }</label>
                                                             </div>
                                                         </div>
                                                     ) )
@@ -191,7 +191,7 @@ function ShopSidebarOne ( props ) {
                                             <div className="filter-price-text d-flex justify-content-between">
                                                 <span>
                                                     Prix:&nbsp;
-                                                    <span className="filter-price-range">${ priceRange.min } - ${ priceRange.max }</span>
+                                                    <span className="filter-price-range">{ priceRange.min }Ar - { priceRange.max }Ar</span>
                                                 </span>
 
                                                 <ALink href={ { pathname: router.pathname, query: { ...query, minPrice: priceRange.min, maxPrice: priceRange.max, page: 1 } } } className="pr-2" scroll={ false }>Filter</ALink>
@@ -199,10 +199,10 @@ function ShopSidebarOne ( props ) {
 
                                             <div className="price-slider">
                                                 <InputRange
-                                                    formatLabel={ value => `$${value}` }
-                                                    maxValue={ 1000 }
+                                                    formatLabel={ value => `Ar${value}` }
+                                                    maxValue={ 1000000 }
                                                     minValue={ 0 }
-                                                    step={ 50 }
+                                                    step={ 50000 }
                                                     value={ priceRange }
                                                     onChange={ onChangePriceRange }
                                                 />
