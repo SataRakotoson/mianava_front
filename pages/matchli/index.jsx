@@ -7,12 +7,13 @@ import { fadeIn, fadeInLeftShorter, fadeInRightShorter } from '~/utils/data';
 import ALink from '~/components/features/alink';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import OutfitOfTheDay from '~/components/outfitOfTheDay/OutfitOfTheDay';
+import CategoryTop from '~/components/features/category-top';
 
 const Matchli = () => {
   return (
     <div>
         <div
-            className="video-banner-bg bg-image"
+            className="video-banner-bg bg-image position-relative"
             // style={ { backgroundImage: "url('images/covers/matchli.png')" } }
             style={ { backgroundImage: "url('images/import/matchli.webp')" } }
         >
@@ -22,6 +23,9 @@ const Matchli = () => {
                 </h1>
                 <p className='text-high-pink'>Des looks et tenues assorties</p>
                 <p className='text-high-pink'>Specialement pour vous</p>
+            </div>
+            <div className="position-absolute d-flex justify-content-center w-100 category-container" style={{top: 20, zIndex: '50'}} >
+                <CategoryTop />
             </div>
         </div>
         <div className="pt-2 pb-3 mt-10">

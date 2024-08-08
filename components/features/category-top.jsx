@@ -1,13 +1,14 @@
+import Link from 'next/link'
 import React from 'react'
 
 const CategoryTop = () => {
   return (
     <div className='d-flex category'>
       {
-        ['Chaussures', 'Mode', 'Sport', 'Bijoux', 'Enfant', 'Parfum','Make-up','Mode'].map((item, index) => (
-          <span key='index' className='category-item'>
+        ['Parfum', 'Mode', 'Sport', 'Bijoux', 'Enfant', 'Chaussures','Make-up','Mode'].map((item, index) => (
+          <Link href={`/shop?category=${item}`} key='index' className='category-item'>
             {item}
-          </span>
+          </Link>
         ))
       }
     </div>
