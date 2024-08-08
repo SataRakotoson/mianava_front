@@ -34,7 +34,7 @@ function Header () {
                     <div className={ containerClass }>
                         <div className="header-left overflow-hidden mr-3 mr-sm-0">
                             <div className="welcome-msg d-flex flex-nowrap">
-                                <p>Ce site est en cours construction, la version finale sera disponible sur mianava.com</p>
+                                {/* <p>Ce site est en cours construction, la version finale sera disponible sur mianava.com</p> */}
                                 {/* <ALink href="#">&nbsp;Voir plus ...</ALink> */}
                             </div>
                         </div>
