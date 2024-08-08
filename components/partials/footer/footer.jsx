@@ -112,12 +112,14 @@ function Footer () {
 
             <div className="footer-bottom">
                 <div className={ containerClass }>
-                    <figure className="footer-payments">
-                        <img src="images/payments.png" alt="Payment methods" width="272" height="20" />
-
+                    <figure className="footer-payments d-flex gap-2">
+                        <img src="images/import/payments/visa.svg" className='rounded' alt="Payment methods" width="80" height="45" />
+                        <img src="images/import/payments/orange.svg" className='mx-2 rounded' alt="Payment methods" width="80" height="45" />
+                        <img src="images/import/payments/mvola.svg" className='mx-2 rounded' alt="Payment methods" width="80" height="45" />
+                        <img src="images/import/payments/paypal.svg" className='mx-2 rounded' alt="Payment methods" width="80" height="45" />
+                        <img src="images/import/payments/mastercard.svg" className='rounded' alt="Payment methods" width="80" height="45" />
                     </figure>
                     <h4 className='text-white'>Mianava</h4>
-
                     <p
                         className="footer-copyright"
                     >Copyright © { new Date().getFullYear() } Mianava Store. All Rights Reserved.</p>

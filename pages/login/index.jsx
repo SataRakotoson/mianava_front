@@ -1,6 +1,9 @@
 import { Router } from 'next/router';
+import { useEffect, useState } from 'react';
 import { Tabs, TabList, Tab, TabPanel } from 'react-tabs';
 import ALink from '~/components/features/alink';
+import { FaEye } from "react-icons/fa6";
+import { FaEyeSlash } from "react-icons/fa";
 
 const loginSubmit = () => {
     alert('login submit')
@@ -8,6 +11,9 @@ const loginSubmit = () => {
 }
 
 function Login () {
+    const [showPassword, setShowPassword] = useState(false)
+
+
     return (
         <div className="main vh-100">
             <div className="login-page h-100 bg-image pt-8 pb-8 pt-md-12 pb-md-12 pt-lg-17 pb-lg-17" style={ { backgroundImage: `url(images/import/colombe2.webp)` } }>
@@ -36,7 +42,22 @@ function Login () {
 
                                                 <div className="form-group">
                                                     <label htmlFor="singin-password-2">Mot de passe *</label>
-                                                    <input type="password" className="form-control" id="singin-password-2" name="singin-password" required />
+                                                    <div className="input-group input-password">
+                                                        <input
+                                                            type={showPassword ? "text" : "password"}
+                                                            className="form-control" 
+                                                            id="singin-password-2" 
+                                                            name="singin-password" 
+                                                            required 
+                                                        />
+                                                        <div class="input-group-prepend">
+                                                            <div class="input-group-text no-background pointer" onClick={() => setShowPassword(!showPassword)}>
+                                                                {
+                                                                    !showPassword ? <FaEye /> : <FaEyeSlash />
+                                                                }
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
 
                                                 <div className="form-footer">
@@ -48,25 +69,6 @@ function Login () {
                                                     <ALink href="/pages/login" className="forgot-link">Mot de passe oublié?</ALink>
                                                 </div>
                                             </form>
-
-                                            {/* SOCIAL MEDIA */}
-                                            {/* <div className="form-choice">
-                                                <p className="text-center">or sign in with</p>
-                                                <div className="row">
-                                                    <div className="col-sm-6">
-                                                        <ALink href="/pages/login" className="btn btn-login btn-g">
-                                                            <i className="icon-google"></i>
-                                                            Login With Google
-                                                    </ALink>
-                                                    </div>
-                                                    <div className="col-sm-6">
-                                                        <ALink href="/pages/login" className="btn btn-login btn-f">
-                                                            <i className="icon-facebook-f"></i>
-                                                            Login With Facebook
-                                                    </ALink>
-                                                    </div>
-                                                </div>
-                                            </div> */}
                                         </div>
                                     </TabPanel>
 
@@ -79,7 +81,22 @@ function Login () {
 
                                             <div className="form-group">
                                                 <label htmlFor="singin-password-2">Mot de passe *</label>
-                                                <input type="password" className="form-control" id="singin-password-2" name="singin-password" required />
+                                                <div className="input-group input-password">
+                                                    <input
+                                                        type={showPassword ? "text" : "password"}
+                                                        className="form-control" 
+                                                        id="singin-password-2" 
+                                                        name="singin-password" 
+                                                        required 
+                                                    />
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text no-background pointer" onClick={() => setShowPassword(!showPassword)}>
+                                                            {
+                                                                !showPassword ? <FaEye /> : <FaEyeSlash />
+                                                            }
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
 
                                             <div className="form-footer">

@@ -70,30 +70,6 @@ function ProductTwelve ( props ) {
     return (
         <div className="product product-7 text-center">
             <figure className="product-media">
-                {/* {
-                    product.new ?
-                        <span className="product-label label-new">New</span>
-                        : ""
-                }
-
-                {
-                    product.sale_price ?
-                        <span className="product-label label-sale">Sale</span>
-                        : ""
-                }
-
-                {
-                    product.top ?
-                        <span className="product-label label-top">Top</span>
-                        : ""
-                }
-
-                {
-                    !product.stock || product.stock == 0 ?
-                        <span className="product-label label-out">Out of Stock</span>
-                        : ""
-                } */}
-
                 <ALink href={ `/product/12` }>
                     <LazyLoadImage
                         alt="product"
@@ -121,35 +97,6 @@ function ProductTwelve ( props ) {
                             : ""
                     } */}
                 </ALink>
-
-
-                {/* <div className="product-action-vertical">
-                    {
-                        isInWishlist( wishlist, product ) ?
-                            <ALink href="/shop/wishlist" className="btn-product-icon btn-wishlist btn-expandable added-to-wishlist"><span>go to wishlist</span></ALink>
-                            :
-                            <a href="#" className="btn-product-icon btn-wishlist btn-expandable" onClick={ onWishlistClick }><span>add to wishlist</span></a>
-
-                    }
-                    <a href="#" className="btn-product-icon btn-quickview" title="Quick View" onClick={ onQuickView }><span>quick view</span></a>
-                </div> */}
-
-                {/* {
-                    product.stock && product.stock !== 0 ?
-                        <div className="product-action product-action-transparent">
-                            {
-                                product.variants.length > 0 ?
-                                    <ALink href={ `/product/default/${product.slug}` } className="btn-product btn-cart btn-select">
-                                        <span>select options</span>
-                                    </ALink>
-                                    :
-                                    <button className="btn-product btn-cart" onClick={ onCartClick }>
-                                        <span>add to cart</span>
-                                    </button>
-                            }
-                        </div>
-                        : ""
-                } */}
                 <div className="product-action product-action-transparent">
                     <button className="btn-product btn-cart">
                         <span>add to cart</span>

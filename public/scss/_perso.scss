@@ -140,7 +140,20 @@ body {
     background: none !important;
 }
 
-// PRODUCT CARD
+// PASSWORD
+.input-password {
+    input {
+        border-right: none;
+    }
+    .input-group-text {
+        cursor: pointer;
+        background: #fafafa;
+        border-color: #ebebeb;
+        border-left: none !important
+    }
+}
+ 
+//PRODUCT CARD
 .product-7 .product-media::before {
     background-image: linear-gradient(#f0f0f0 250px, transparent 0);
     background-color: #f0f0f0;
@@ -149,3 +162,8 @@ body {
 .product-7 .product-media img {
     filter: brightness(0.94);
 }
+
+// INSTAGRAM FEED
+#eapps-instagram-feed-1 >a {
+      display: none !important;
+  }

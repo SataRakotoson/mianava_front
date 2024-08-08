@@ -132,6 +132,11 @@ function ProductEleven ( props ) {
                             : ""
                     }
                 </ALink>
+                
+                {/* WISHLIST */}
+                <div className="product-action-vertical">
+                    <a href="#" className="btn-product-icon btn-wishlist btn-expandable"><span>ajouter aux wishlists</span></a>
+                </div>
 
                 {/* {
                     product.stock > 0 ?
