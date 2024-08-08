@@ -6,6 +6,7 @@ import NewCollection from '~/components/partials/home/new-collection';
 import { GET_HOME_DATA } from '~/server/queries';
 import { fadeIn } from '~/utils/data';
 import VenteEphemere from '~/components/venteEphemere/VenteEphemere';
+import CategoryTop from '~/components/features/category-top';
 
 const Ephemere = () => {
 
@@ -14,7 +15,7 @@ const Ephemere = () => {
   return (
     <div>
         <div
-            className="video-banner-bg bg-image"
+            className="video-banner-bg bg-image position-relative"
             // style={ { backgroundImage: "url('images/covers/ephemere.png')" } }
             style={ { backgroundImage: "url('images/import/ephemere.webp')" } }
         >
@@ -24,6 +25,9 @@ const Ephemere = () => {
                     Ephemere
                 </h1>
                 <p className='m-0 font-weight-bolder text-high-pink'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br /> Dolor excepturi assumenda minus explicabo.</p>
+            </div>
+            <div className="position-absolute d-flex justify-content-center w-100 category-container" style={{top: 20, zIndex: '50'}} >
+                <CategoryTop />
             </div>
         </div>
         <div className="mb-6"></div>
