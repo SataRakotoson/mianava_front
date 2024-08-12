@@ -107,7 +107,7 @@ function ProductEleven ( props ) {
                         : ""
                 } */}
 
-                <ALink href='/product/12'>
+                <ALink href={`/product/${product.product.fieldData.slug}`}>
                     <LazyLoadImage
                         className='product_card' //A CREER dans un scss global
                         style={{objectFit:"contain"}} //style de secours
@@ -169,7 +169,7 @@ function ProductEleven ( props ) {
                         <div className="product-action">
                             {
                                 false > 0 ?
-                                    <ALink href={`/product/12`} className="btn-product btn-cart btn-select">
+                                    <ALink href={`/product/${product.product.fieldData.slug}`} className="btn-product btn-cart btn-select">
                                         <span>Sélectionnez les variants</span>
                                     </ALink>
                                     :
